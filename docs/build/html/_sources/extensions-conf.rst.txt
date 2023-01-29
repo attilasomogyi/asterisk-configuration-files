@@ -1,9 +1,0 @@
-extensions.conf
-================
-
-The "extensions.conf" file is a text file that is read by the Asterisk server when it starts up. It is located in the "/etc/asterisk" directory on the Asterisk server. The file is divided into sections, each of which is enclosed in square brackets. The sections are called "contexts", and each context defines a set of rules for handling calls. The "extensions.conf" file can contain multiple contexts, and each context can contain multiple extensions. The "extensions.conf" file is divided into two sections: the "globals" section and the "contexts" section. The "globals" section contains global variables that are used by all contexts. The "contexts" section contains the actual contexts that define how calls are handled.
-
-[general]
-----------
-
-static=yes
