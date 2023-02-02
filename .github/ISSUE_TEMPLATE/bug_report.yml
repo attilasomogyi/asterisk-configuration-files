@@ -1,0 +1,113 @@
+---
+name: Bug Report
+description: Bug Report
+title: "bug: "
+labels: ["bug"]
+assignees:
+  - attilasomogyi
+
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Effected component
+      description: Effected component
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Effected version
+      description: Effected version
+      multiple: false
+      options:
+        - latest
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: environment
+      multiple: true
+      options:
+        - "GNU/Linux Distribution"
+        - "BSD Distribution"
+        - "MacOSX"
+        - "Windows"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity-level
+    attributes:
+      label: Severity level
+      description: Severity level
+      multiple: false
+      options:
+        - "s1: critical"
+        - "s2: major"
+        - "s3: minor/moderate"
+        - "s4: low"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority-level
+    attributes:
+      label: Priority level
+      description: Priority level
+      multiple: false
+      options:
+        - "p1: immediate/critical"
+        - "p2: high"
+        - "p3: medium"
+        - "p4: low"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: "Bug description"
+      value: "Bug description"
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Reproduction steps
+      description: "How do you trigger this bug? Please walk us through it step by step."
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected result
+      description: "Expected result"
+      value: "Expected result..."
+      render: HTML
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Actual result
+      description: "Actual result"
+      value: "Actual result..."
+      render: HTML
+    validations:
+      required: true
