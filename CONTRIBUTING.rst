@@ -1,7 +1,7 @@
-Contributing to Github Actions Workflows
+Contributing to Asterisk Configuration Files
 ========================================
 
-We would love for you to contribute to Github Actions Workflows and help
+We would love for you to contribute to Asterisk Configuration Files and help
 make it even better than it is today! As a contributor, here are the
 guidelines we would like you to follow:
 
@@ -16,7 +16,7 @@ guidelines we would like you to follow:
 Code of Conduct
 ---------------
 
-Help us keep Github Actions Workflows open and inclusive. Please read
+Help us keep Asterisk Configuration Files open and inclusive. Please read
 and follow our `Code of Conduct </CODE_OF_CONDUCT.md>`__.
 
 Got a Question or Problem?
@@ -25,9 +25,9 @@ Got a Question or Problem?
 Do not open issues for general support questions as we want to keep
 GitHub issues for bug reports and feature requests. Instead, we
 recommend using `Stack
-Overflow <https://stackoverflow.com/questions/tagged/github-actions-workflows>`__
+Overflow <https://stackoverflow.com/questions/tagged/asterisk-configuration-files>`__
 to ask support-related questions. When creating a new question on Stack
-Overflow, make sure to add the ``github-actions-workflows`` tag.
+Overflow, make sure to add the ``asterisk-configuration-files`` tag.
 
 Stack Overflow is a much better place to ask questions since:
 
@@ -45,7 +45,7 @@ Found a Bug?
 
 If you find a bug in the source code, you can help us by `submitting an
 issue <#submitting-an-issue>`__ to our `GitHub
-Repository <https://github.com/attilasomogyi/github-actions-workflows>`__.
+Repository <https://github.com/attilasomogyi/asterisk-configuration-files>`__.
 Even better, you can `submit a Pull
 Request <#submitting-a-pull-request>`__ with a fix.
 
@@ -101,7 +101,7 @@ minimal reproduction, so if we don’t hear back from you, we are going to
 close an issue that doesn’t have enough info to be reproduced.
 
 You can file new issues by selecting from our `new issue
-templates <https://github.com/attilasomogyi/github-actions-workflows/issues/new/choose>`__
+templates <https://github.com/attilasomogyi/asterisk-configuration-files/issues/new/choose>`__
 and filling out the issue template.
 
 Submitting a Pull Request
@@ -121,7 +121,7 @@ guidelines:
     work.
 
 3.  `Fork <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`__
-    the attilasomogyi/github-actions-workflows repo.
+    the attilasomogyi/asterisk-configuration-files repo.
 
 4.  In your forked repository, make your changes in a new git branch:
 
@@ -154,16 +154,16 @@ guidelines:
 
        git push origin my-fix-branch
 
-10. In GitHub, send a pull request to ``github-actions-workflows:main``.
+10. In GitHub, send a pull request to ``asterisk-configuration-files:main``.
 
 Reviewing a Pull Request
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Github Actions Workflows team reserves the right not to accept pull
+The Asterisk Configuration Files team reserves the right not to accept pull
 requests from community members who haven’t been good citizens of the
 community. Such behavior includes not following the `Github Actions
 Workflows code of conduct </CODE_OF_CONDUCT.md>`__ and applies within or
-outside of Github Actions Workflows managed channels.
+outside of Asterisk Configuration Files managed channels.
 
 Addressing review feedback
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
