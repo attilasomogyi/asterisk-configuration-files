@@ -1,28 +1,40 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
 project = 'Asterisk Configuration Files'
 copyright = '2023, Attila Zsolt Somogyi'
 author = 'Attila Zsolt Somogyi'
 release = 'latest'
+version = 'latest'
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+github_username = 'attilasomogyi'
+github_repository = 'asterisk-configuration-files'
 
-extensions = []
+extensions = [
+    'sphinx.ext.duration',
+    'sphinx.ext.doctest',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.imgconverter',
+    'sphinx_copybutton',
+    'sphinx.ext.extlinks',
+    'sphinx_toolbox',
+]
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+html_theme_options = {
+    'display_version': True,
+    'show_sphinx': False,
+}
 
-
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
+html_theme = 'furo'
 html_static_path = ['_static']
+html_show_sourcelink = False
+html_copy_source = False
+html_show_sphinx = False
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3/', None),
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+}
+
+intersphinx_disabled_domains = ['std']
