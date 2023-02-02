@@ -1,0 +1,62 @@
+name: Build Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+  workflow_call:
+
+jobs:
+  build-documentation:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: pandoc
+
+      - name: Pyhton Cache
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+          cache: "pip"
+
+      - name: Build Documentation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm install -g markdownlint-cli
+          pip install -U sphinx furo sphinx-copybutton sphinx-toolbox
+          docs_source_pages="docs/source/pages"
+          flags="--from gfm --to rst -s -o"
+          pandoc SUPPORT.md $flags $docs_source_pages/support.rst
+          pandoc SECURITY.md $flags $docs_source_pages/security.rst
+          pandoc CODE_OF_CONDUCT.md $flags $docs_source_pages/code-of-conduct.rst
+          pandoc CONTRIBUTING.md $flags $docs_source_pages/contributing.rst
+          pandoc README.md $flags $docs_source_pages/readme.rst
+          #mv CHANGELOG.md CHANGELOG.md.old
+          #pandoc --from gfm --to gfm CHANGELOG.md.old -s -o CHANGELOG.md --shift-heading-level-by 1
+          #sed -i '1s/^/# Changelog\n\n/' CHANGELOG.md
+          #markdownlint --disable MD001 MD013 MD024 MD021 MD041 -f CHANGELOG.md
+          #pandoc CHANGELOG.md $flags $docs_source_pages/changelog.rst
+          make -C docs clean
+          make -C docs html
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          docroot=`mktemp -d`
+          rsync -av "docs/build/html/" "${docroot}/"
+          pushd "${docroot}"
+          git init
+          git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git checkout -b gh-pages
+          touch .nojekyll
+          git add .
+          msg="docs: update documents"
+          git commit -am "${msg}"
+          git push deploy gh-pages --force

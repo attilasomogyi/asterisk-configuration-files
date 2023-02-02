@@ -1,21 +1,44 @@
-.. Asterisk Configuration Files documentation master file, created by
-   sphinx-quickstart on Sun Jan 29 19:44:10 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to Asterisk Configuration Files's documentation!
-========================================================
+=============================================
+
+.. note::
+
+   This project is under active development.
+
+Contents
+--------
+
+.. sidebar-links::
+   :caption: Project Homepage
+   :github:
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
+   :caption: Readme
 
-   sip-conf
-   extensions-conf
+   pages/readme
+   
+.. toctree::
+   :caption: Code of Conduct
 
-Indices and tables
-==================
+   pages/code-of-conduct
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :caption: Contributing
+
+   pages/contributing
+
+.. toctree::
+   :caption: Support
+
+   pages/support
+
+.. .. toctree::
+..   :caption: Changelog
+..   :titlesonly:
+
+..   pages/changelog
+
+.. toctree:: 
+   :caption: Security
+
+   pages/security
