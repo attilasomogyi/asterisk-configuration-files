@@ -18,6 +18,16 @@ Contents
    pages/readme
    
 .. toctree::
+   :caption: sip.conf
+
+   pages/sip-conf
+
+.. toctree::
+   :caption: extensions.conf
+
+   pages/extensions-conf
+
+.. toctree::
    :caption: Code of Conduct
 
    pages/code-of-conduct
