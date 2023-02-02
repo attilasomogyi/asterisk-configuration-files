@@ -54,8 +54,10 @@ Project description
 - Steps
 
 ```shell
-commands
-
+git clone https://github.com/attilasomogyi/asterisk-configuration-files.git
+cp -r /etc/asterisk /etc/asterisk-backup-$(date --iso-8601=seconds)
+cp asterisk-configuration-files/src/*.conf /etc/asterisk
+systemctl restart asterisk
 ```
 
 ## Usage
