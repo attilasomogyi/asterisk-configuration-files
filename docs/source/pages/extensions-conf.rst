@@ -71,6 +71,6 @@ same => n,Queue(clients)
 The line "same => n,Queue(clients)" in extensions.conf means that calls to the specified extension will be directed to the specified queue, in this case "clients". The "same => n" part means that the next priority of the extension will be executed and in this case, it is adding the call to the queue "clients".
 
 same => n,Answer
-
+~~~~~~~~~~~~~~~~~~
 
 "same => n,Answer" in extensions.conf is an Asterisk dialplan application which answers an incoming call and makes it ready to be processed by further dialplan instructions. It is used to start processing an incoming call and put the call into an active state.
