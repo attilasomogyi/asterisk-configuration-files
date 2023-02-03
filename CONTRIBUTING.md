@@ -389,7 +389,7 @@ The content of the commit message body should contain:
   format: `This reverts commit <SHA>`,
 - a clear description of the reason for reverting the commit message.
 
-[coc]: /CODE_OF_CONDUCT.md
+[coc]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CODE_OF_CONDUCT.md
 [commit-message-format]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#
 [github]: https://github.com/attilasomogyi/asterisk-configuration-files
 [js-style-guide]: https://google.github.io/styleguide/jsguide.html
