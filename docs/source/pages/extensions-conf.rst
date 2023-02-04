@@ -79,3 +79,15 @@ same => n,Hangup
 ~~~~~~~~~~~~~~~~~~
 
 In extensions.conf, "same => n,Hangup" is a dialplan application that immediately ends the current call with a hangup message. The "n" represents the current priority number in the dialplan and can be any positive integer. This command terminates the call and releases any used resources.
+
+[from-internal]
+------------------
+
+In Asterisk PBX, the section "[from-internal]" in the extensions.conf file refers to a context for incoming calls from the internal network or PBX extensions. The extensions and rules defined in this context are applied to calls that originate from within the PBX system. This allows for customization of the PBX behavior for internal calls and provides a way to handle these calls differently from external calls.
+
+.. literalinclude:: /../../src/extensions.conf
+   :caption: extensions.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 21
+   :lines: 21-51
