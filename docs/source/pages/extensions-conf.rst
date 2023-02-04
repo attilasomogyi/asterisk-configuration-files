@@ -91,3 +91,8 @@ In Asterisk PBX, the section "[from-internal]" in the extensions.conf file refer
    :linenos:
    :lineno-start: 21
    :lines: 21-51
+
+exten => _0690XXXXXX,1,Hangup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"exten => _0690XXXXXX,1,Hangup" in the extensions.conf file is a dialplan pattern. It matches outgoing calls that start with the prefix "0690XXXXXX" and immediately hangs up the call by executing the Hangup dialplan application on the first priority (1).
