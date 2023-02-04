@@ -44,7 +44,7 @@ The "[globals]" section in the extensions.conf file is used to set global variab
    :lines: 6-7
 
 [from-external]
-~~~~~~~~~~~~~~~~~~
+------------------
 
 [from-external] in extensions.conf is a context that specifies the dialplan logic for incoming calls from the outside or external network. This context typically contains the extensions and dialplan logic that handle incoming calls and determine how they are routed or processed within the PBX system. In two sentences, "[from-external]" in extensions.conf specifies the dialplan logic for incoming calls from the outside network and typically includes the extensions that handle and route these calls within the PBX system.
 
