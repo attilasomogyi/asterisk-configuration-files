@@ -189,22 +189,32 @@ The **max_contacts = 1** option under the *[default-aors]* section of the pjsip.
    :lineno-start: 35
    :lines: 35-60
 
-[isdn-1](default-aors)/[isdn-2](default-aors)/[gsm](default-aors)
----------------------------------------------------------------------
+[isdn-1/isdn-2/gsm](default-aors)
+---------------------------------
 
-**[isdn-1](default-aors)/[isdn-2](default-aors)/[gsm](default-oars)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interface. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm section sets up the common options for all AORs defined in the system.
+**[isdn-1/isdn-2/gsm](default-aors)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interfaces. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm sections sets up the common options for all AORs defined in the system.
 
 [isdn-1](default-password)/[isdn-2](default-password)/[gsm](default-password)
 --------------------------------------------------------------------------------
 
-**[isdn-1](default-password)/[isdn-2](default-password)/[gsm](default-password)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interface. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm section sets up the common options for all AORs defined in the system.
+**[isdn-1/isdn-2/gsm](default-password)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interfaces. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm sections sets up the common options for all AORs defined in the system.
 
 username = isdn-1/isdn-2/gsm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The **username** directive in a pjsip.conf file specifies the username for an endpoint in an Asterisk setup. The value **isdn-1/isdn-2/gsm** is a specific example of a username, indicating that this endpoint is related to the ISDN line 1.
+The **username** directive in a pjsip.conf file specifies the username for an endpoint in an Asterisk setup. The value **isdn-1/isdn-2/gsm** is a specific example of a username, indicating that this endpoint is related to the isdn-1/isdn-2/gsm interface.
 
-[isdn-1](default-from-external)/[isdn-2](default-from-external)/[gsm](default-from-external)
-------------------------------------------------------------------------------------------------
+[isdn-1/isdn-2/gsm](default-from-external)
+-------------------------------------------
 
-The line **[isdn-1](default-from-external)/[isdn-1](default-from-external)/[gsm](default-from-external)** in *pjsip.conf* are definitions of a named endpoint in the PJSIP configuration file. The endpoints name *isdn-1/isdn-2/gsm/* are being defined within the default-from-external template, which means it will inherit all the properties defined in that template. The properties defined within this endpoint section can be used to configure specific settings for the endpoints *isdn-1/isdn-2/gsm*.
+The line **[isdn-1/isdn-2/gsm](default-from-external)** in *pjsip.conf* are definitions of a named endpoint in the PJSIP configuration file. The endpoints name *isdn-1/isdn-2/gsm/* are being defined within the default-from-external template, which means it will inherit all the properties defined in that template. The properties defined within this endpoint section can be used to configure specific settings for the endpoints *isdn-1/isdn-2/gsm*.
+
+auth = isdn-1/isdn-2/gsm
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **auth = isdn-1/isdn-2/gsm** option under the *[isdn-1/isdn-2/gsm](default-from-external)* section of the pjsip.conf file specifies the authentication method to use for incoming calls from external sources.
+
+aors = isdn-1/isdn-2/gsm
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **aors = isdn-1/isdn-2/gsm** option under the *[isdn-1/isdn-2/gsm](default-from-external)* section of the pjsip.conf file specifies the AOR to use for incoming calls from external sources.
