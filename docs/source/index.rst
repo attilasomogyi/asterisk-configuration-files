@@ -28,6 +28,11 @@ Contents
    pages/extensions-conf
 
 .. toctree::
+   :caption: queues.conf
+
+   pages/queues-conf
+
+.. toctree::
    :caption: Code of Conduct
 
    pages/code-of-conduct

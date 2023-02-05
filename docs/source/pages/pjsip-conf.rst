@@ -218,3 +218,33 @@ aors = isdn-1/isdn-2/gsm
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The **aors = isdn-1/isdn-2/gsm** option under the *[isdn-1/isdn-2/gsm](default-from-external)* section of the pjsip.conf file specifies the AOR to use for incoming calls from external sources.
+
+[201](default-aors)
+--------------------
+
+In PJSIP configuration, **[201](default-aors)** is a reference to a section named 201 within the configuration file that is using the template default-aors. This section contains the configuration options for a specific endpoint or device with a user id of 201, and its options are based on the values defined in the default-aors template.
+
+[201](default-password)
+------------------------
+
+In PJSIP configuration, **[201](default-password)** is a reference to a section named 201 within the configuration file that is using the template default-password. This section contains the configuration options for a specific endpoint or device with a user id of 201, and its options are based on the values defined in the default-password template.
+
+username = 201
+~~~~~~~~~~~~~~~~
+
+In the PJSIP configuration file, **username = 201** sets the username for an endpoint or authentication object to 201. This identifier is used to authenticate and identify the endpoint when making or receiving calls.
+
+[201](default-from-internal)
+------------------------------
+
+In PJSIP configuration, **[201](default-from-internal)** is a reference to a section named 201 within the configuration file that is using the template default-from-internal. This section contains the configuration options for a specific endpoint or device with a user id of 201, and its options are based on the values defined in the default-from-internal template.
+
+auth = 201
+~~~~~~~~~~~~
+
+**auth = 201** in pjsip.conf means that the authentication for the corresponding configuration section will be set to use the username 201. The purpose of authentication is to verify the identity of a user or device attempting to access a network resource. In the context of pjsip.conf, the auth setting is used to identify the username that will be used for authentication purposes when connecting to a remote peer.
+
+aors = 201
+~~~~~~~~~~~~
+
+**aors = 201** in pjsip.conf means that the AOR for the corresponding configuration section will be set to use the username 201. An AOR is a unique identifier for a SIP endpoint or user, and the default-aors section sets up the common options for all AORs defined in the system.
