@@ -1,7 +1,7 @@
 pjsip.conf
 =================
 
-*pjsip.conf* is a configuration file used by PJSIP, a SIP (Session Initiation Protocol) implementation for Voice over IP (VoIP) communication. It contains the settings and options for the PJSIP stack to configure and manage SIP endpoints, such as how to handle incoming and outgoing calls, how to authenticate and secure communication, and how to handle network and media handling.
+**pjsip.conf** is a configuration file used by PJSIP, a SIP (Session Initiation Protocol) implementation for Voice over IP (VoIP) communication. It contains the settings and options for the PJSIP stack to configure and manage SIP endpoints, such as how to handle incoming and outgoing calls, how to authenticate and secure communication, and how to handle network and media handling.
 
 [global]
 -----------------
