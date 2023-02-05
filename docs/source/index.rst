@@ -15,12 +15,7 @@ Contents
 .. toctree::
    :caption: Readme
 
-   pages/readme
-   
-.. toctree::
-   :caption: sip.conf
-
-   pages/sip-conf
+   pages/readme   
 
 .. toctree::
    :caption: pjsip.conf
