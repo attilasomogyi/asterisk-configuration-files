@@ -55,7 +55,7 @@ The **bind = 0.0.0.0 **option under the *[transport-udp]* section of the pjsip.c
 [default-password](!)
 ----------------------
 
-In PJSIP configuration file, default-password section is used to specify the default password for PJSIP endpoints created within the scope of the current configuration file, which can be overridden by individual endpoint authentication credentials. The "!" symbol means the section is only used for reference and its content cannot be modified.
+In PJSIP configuration file, **[default-password](!)** section is used to specify the default password for PJSIP endpoints created within the scope of the current configuration file, which can be overridden by individual endpoint authentication credentials. The "!" symbol means the section is only used for reference and its content cannot be modified.
 
 .. literalinclude:: /../../src/pjsip.conf
    :caption: pjsip.conf
@@ -78,3 +78,45 @@ password = important-change-password-at-first-use
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The **password = important-change-at-first-use** option under the *[default-password]* section of the pjsip.conf file specifies the default password for PJSIP endpoints created within the scope of the current configuration file. This password can be overridden by individual endpoint authentication credentials.
+
+[default-from-external](!)
+----------------------------
+
+In the context of a pjsip.conf file, **[default-from-external](!)** is a section header that defines the default behavior for incoming SIP messages from external sources. It sets the default parameters for authentication, authorization, encryption, and other settings for incoming SIP messages from external sources.
+
+.. literalinclude:: /../../src/pjsip.conf
+   :caption: pjsip.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 15
+   :lines: 15-21
+
+type = endpoint
+~~~~~~~~~~~~~~~~~~
+
+In PJSIP, **type = endpoint** under the *[default-from-external]* section of the pjsip.conf file specifies that the configuration block following the line is an endpoint configuration block. The options specified in this block will be applied to the endpoint layer.
+
+context = from-external
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **context = from-external** option under the *[default-from-external]* section of the pjsip.conf file specifies the context to use for incoming calls from external sources.
+
+dtmf_mode = rfc4733
+~~~~~~~~~~~~~~~~~~~~~~
+
+The **dtmf_mode = rfc4733** option under the *[default-from-external]* section of the pjsip.conf file specifies that the endpoint should use RFC 4733 for sending and receiving DTMF tones.
+
+disallow = all
+~~~~~~~~~~~~~~~~
+
+The **disallow = all** option under the *[default-from-external]* section of the pjsip.conf file specifies that the endpoint should not allow any codecs for incoming calls from external sources.
+
+allow = ulaw
+~~~~~~~~~~~~~~
+
+The **allow = ulaw** option under the *[default-from-external]* section of the pjsip.conf file specifies that the endpoint should allow the ulaw codec for incoming calls from external sources.
+
+direct_media = no
+~~~~~~~~~~~~~~~~~~~
+
+The **direct_media = no** option under the *[default-from-external]* section of the pjsip.conf file specifies that the endpoint should not use direct media for incoming calls from external sources.
