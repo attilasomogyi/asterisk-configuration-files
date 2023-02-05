@@ -171,3 +171,35 @@ The **direct_media = no** option under the *[default-from-internal]* section of 
    :linenos:
    :lineno-start: 31
    :lines: 31-33
+
+type = aor
+~~~~~~~~~~~~
+
+In PJSIP, **type = aor** under the *[default-aors]* section of the pjsip.conf file specifies that the configuration block following the line is an AOR configuration block. The options specified in this block will be applied to the AOR layer.
+
+max_contacts = 1
+~~~~~~~~~~~~~~~~~~
+
+The **max_contacts = 1** option under the *[default-aors]* section of the pjsip.conf file specifies the maximum number of contacts that can be registered to the AOR.
+
+.. literalinclude:: /../../src/pjsip.conf
+   :caption: pjsip.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 35
+   :lines: 35-60
+
+[isdn-1](default-aors)/[isdn-2](default-aors)/[gsm](default-aors)
+---------------------------------------------------------------------
+
+**[isdn-1](default-aors)/[isdn-2](default-aors)/[gsm](default-oars)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interface. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm section sets up the common options for all AORs defined in the system.
+
+[isdn-1](default-password)/[isdn-2](default-password)/[gsm](default-password)
+--------------------------------------------------------------------------------
+
+**[isdn-1](default-password)/[isdn-2](default-password)/[gsm](default-password)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interface. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm section sets up the common options for all AORs defined in the system.
+
+username = isdn-1/isdn-2/gsm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **username** directive in a pjsip.conf file specifies the username for an endpoint in an Asterisk setup. The value "isdn-1" is a specific example of a username, indicating that this endpoint is related to the ISDN line 1.
