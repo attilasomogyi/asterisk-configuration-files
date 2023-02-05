@@ -202,4 +202,9 @@ The **max_contacts = 1** option under the *[default-aors]* section of the pjsip.
 username = isdn-1/isdn-2/gsm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The **username** directive in a pjsip.conf file specifies the username for an endpoint in an Asterisk setup. The value "isdn-1" is a specific example of a username, indicating that this endpoint is related to the ISDN line 1.
+The **username** directive in a pjsip.conf file specifies the username for an endpoint in an Asterisk setup. The value **isdn-1/isdn-2/gsm** is a specific example of a username, indicating that this endpoint is related to the ISDN line 1.
+
+[isdn-1](default-from-external)/[isdn-2](default-from-external)/[gsm](default-from-external)
+------------------------------------------------------------------------------------------------
+
+The line **[isdn-1](default-from-external)/[isdn-1](default-from-external)/[gsm](default-from-external)** in *pjsip.conf* are definitions of a named endpoint in the PJSIP configuration file. The endpoints name *isdn-1/isdn-2/gsm/* are being defined within the default-from-external template, which means it will inherit all the properties defined in that template. The properties defined within this endpoint section can be used to configure specific settings for the endpoints *isdn-1/isdn-2/gsm*.
