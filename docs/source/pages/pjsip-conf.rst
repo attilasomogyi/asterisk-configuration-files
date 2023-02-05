@@ -120,3 +120,42 @@ direct_media = no
 ~~~~~~~~~~~~~~~~~~~
 
 The **direct_media = no** option under the *[default-from-external]* section of the pjsip.conf file specifies that the endpoint should not use direct media for incoming calls from external sources.
+
+[default-from-internal](!)
+
+In the context of a pjsip.conf file, **[default-from-internal](!)** is a section header that defines the default behavior for incoming SIP messages from internal sources. It sets the default parameters for authentication, authorization, encryption, and other settings for incoming SIP messages from internal sources.
+
+.. literalinclude:: /../../src/pjsip.conf
+   :caption: pjsip.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 23
+   :lines: 23-29
+
+type = endpoint
+~~~~~~~~~~~~~~~~~~
+
+In PJSIP, **type = endpoint** under the *[default-from-internal]* section of the pjsip.conf file specifies that the configuration block following the line is an endpoint configuration block. The options specified in this block will be applied to the endpoint layer.
+
+context = from-internal
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **context = from-internal** option under the *[default-from-internal]* section of the pjsip.conf file specifies the context to use for incoming calls from internal sources.
+
+dtmf_mode = rfc4733
+
+The **dtmf_mode = rfc4733** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should use RFC 4733 for sending and receiving DTMF tones.
+
+disallow = all
+~~~~~~~~~~~~~~~~
+
+The **disallow = all** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should not allow any codecs for incoming calls from internal sources.
+
+allow = ulaw
+~~~~~~~~~~~~~~
+
+The **allow = ulaw** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should allow the ulaw codec for incoming calls from internal sources.
+
+direct_media = no
+
+The **direct_media = no** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should not use direct media for incoming calls from internal sources.
