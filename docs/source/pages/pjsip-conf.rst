@@ -24,3 +24,30 @@ debug = yes
 ~~~~~~~~~~~~~~
 
 The **debug = yes** option under the *[global]* section of the pjsip.conf file specifies that PJSIP should log debug messages to the Asterisk log file. This option is useful for debugging PJSIP issues.
+
+[transport-udp]
+-----------------
+
+In the PJSIP configuration file, the **[transport-udp]** section specifies the configuration options for the UDP transport layer used for sending and receiving SIP messages in a PJSIP-based communication system. It determines the properties of the UDP transport such as the local address and port to bind to, and the type of the messages that will be sent over the UDP transport.
+
+.. literalinclude:: /../../src/pjsip.conf
+   :caption: pjsip.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 5
+   :lines: 5-8
+
+type = transport
+~~~~~~~~~~~~~~~~~~~
+
+In PJSIP, **type = transport** under the *[transport-udp]* section of the pjsip.conf file specifies that the configuration block following the line is a transport configuration block. The options specified in this block will be applied to the transport layer.
+
+protocol = udp
+~~~~~~~~~~~~~~~~~~~
+
+The **protocol = udp** option under the *[transport-udp]* section of the pjsip.conf file specifies that the transport layer should use the UDP protocol for sending and receiving SIP messages.
+
+bind = 0.0.0.0
+~~~~~~~~~~~~~~~~~~~
+
+The **bind = 0.0.0.0 **option under the *[transport-udp]* section of the pjsip.conf file specifies that the transport layer should bind to all available network interfaces on the system.
