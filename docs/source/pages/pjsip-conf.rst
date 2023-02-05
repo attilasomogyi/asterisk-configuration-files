@@ -19,3 +19,8 @@ type = global
 ~~~~~~~~~~~~~~ 
 
 In PJSIP, **type = global** under the *[global]* section of the pjsip.conf file specifies that the configuration block following the line is a global configuration block. The options specified in this block will be applied globally to all PJSIP endpoints and transactions.
+
+debug = yes
+~~~~~~~~~~~~~~
+
+The **debug = yes** option under the *[global]* section of the pjsip.conf file specifies that PJSIP should log debug messages to the Asterisk log file. This option is useful for debugging PJSIP issues.
