@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Project description
+Asterisk Configuration Files provide a method to configure the settings and behavior of the Asterisk PBX system. These files are typically in a .conf format and include settings for SIP, PJSIP, and extensions, among others.
 </p>
 
 <p align="center">
