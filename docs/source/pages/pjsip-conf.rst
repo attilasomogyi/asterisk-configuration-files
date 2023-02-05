@@ -51,3 +51,30 @@ bind = 0.0.0.0
 ~~~~~~~~~~~~~~~~~~~
 
 The **bind = 0.0.0.0 **option under the *[transport-udp]* section of the pjsip.conf file specifies that the transport layer should bind to all available network interfaces on the system.
+
+[default-password](!)
+----------------------
+
+In PJSIP configuration file, default-password section is used to specify the default password for PJSIP endpoints created within the scope of the current configuration file, which can be overridden by individual endpoint authentication credentials. The "!" symbol means the section is only used for reference and its content cannot be modified.
+
+.. literalinclude:: /../../src/pjsip.conf
+   :caption: pjsip.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 10
+   :lines: 10-13
+
+type = auth
+~~~~~~~~~~~~~~
+
+In PJSIP, **type = auth** under the *[default-password]* section of the pjsip.conf file specifies that the configuration block following the line is an authentication configuration block. The options specified in this block will be applied to the authentication layer.
+
+auth_type = userpass
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The **auth_type = userpass** option under the *[default-password]* section of the pjsip.conf file specifies that the authentication layer should use the userpass authentication type for authenticating PJSIP endpoints.
+
+password = important-change-password-at-first-use
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **password = important-change-at-first-use** option under the *[default-password]* section of the pjsip.conf file specifies the default password for PJSIP endpoints created within the scope of the current configuration file. This password can be overridden by individual endpoint authentication credentials.
