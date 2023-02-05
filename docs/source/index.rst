@@ -23,6 +23,11 @@ Contents
    pages/sip-conf
 
 .. toctree::
+   :caption: pjsip.conf
+
+   pages/pjsip-conf
+
+.. toctree::
    :caption: extensions.conf
 
    pages/extensions-conf
