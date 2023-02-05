@@ -194,7 +194,7 @@ The **max_contacts = 1** option under the *[default-aors]* section of the pjsip.
 
 **[isdn-1/isdn-2/gsm](default-aors)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interfaces. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm sections sets up the common options for all AORs defined in the system.
 
-[isdn-1](default-password)/[isdn-2](default-password)/[gsm](default-password)
+[isdn-1/isdn-2/gsm](default-password)
 --------------------------------------------------------------------------------
 
 **[isdn-1/isdn-2/gsm](default-password)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interfaces. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm sections sets up the common options for all AORs defined in the system.
