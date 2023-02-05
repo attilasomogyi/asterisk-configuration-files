@@ -159,3 +159,15 @@ The **allow = ulaw** option under the *[default-from-internal]* section of the p
 direct_media = no
 
 The **direct_media = no** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should not use direct media for incoming calls from internal sources.
+
+[default-aors](!)
+------------------
+
+**[default-aors](!)** in *pjsip.conf* refers to a default set of "Address Of Record" (AOR) configurations. An AOR is a unique identifier for a SIP endpoint or user, and the default-aors section sets up the common options for all AORs defined in the system.
+
+.. literalinclude:: /../../src/pjsip.conf
+   :caption: pjsip.conf
+   :language: ini
+   :linenos:
+   :lineno-start: 31
+   :lines: 31-33
