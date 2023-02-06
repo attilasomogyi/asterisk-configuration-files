@@ -50,12 +50,12 @@ The **protocol = udp** option under the *[transport-udp]* section of the pjsip.c
 bind = 0.0.0.0
 ~~~~~~~~~~~~~~~~~~~
 
-The **bind = 0.0.0.0 **option under the *[transport-udp]* section of the pjsip.conf file specifies that the transport layer should bind to all available network interfaces on the system.
+The **bind = 0.0.0.0** option under the *[transport-udp]* section of the pjsip.conf file specifies that the transport layer should bind to all available network interfaces on the system.
 
 [default-password](!)
 ----------------------
 
-In PJSIP configuration file, **[default-password](!)** section is used to specify the default password for PJSIP endpoints created within the scope of the current configuration file, which can be overridden by individual endpoint authentication credentials. The "!" symbol means the section is only used for reference and its content cannot be modified.
+In PJSIP configuration file, **[default-password](!)** section is used to specify the default password for PJSIP endpoints created within the scope of the current configuration file, which can be overridden by individual endpoint authentication credentials.
 
 .. literalinclude:: /../../src/pjsip.conf
    :caption: pjsip.conf
@@ -122,6 +122,7 @@ direct_media = no
 The **direct_media = no** option under the *[default-from-external]* section of the pjsip.conf file specifies that the endpoint should not use direct media for incoming calls from external sources.
 
 [default-from-internal](!)
+----------------------------
 
 In the context of a pjsip.conf file, **[default-from-internal](!)** is a section header that defines the default behavior for incoming SIP messages from internal sources. It sets the default parameters for authentication, authorization, encryption, and other settings for incoming SIP messages from internal sources.
 
@@ -143,6 +144,7 @@ context = from-internal
 The **context = from-internal** option under the *[default-from-internal]* section of the pjsip.conf file specifies the context to use for incoming calls from internal sources.
 
 dtmf_mode = rfc4733
+~~~~~~~~~~~~~~~~~~~~~~
 
 The **dtmf_mode = rfc4733** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should use RFC 4733 for sending and receiving DTMF tones.
 
@@ -157,6 +159,7 @@ allow = ulaw
 The **allow = ulaw** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should allow the ulaw codec for incoming calls from internal sources.
 
 direct_media = no
+~~~~~~~~~~~~~~~~~~~
 
 The **direct_media = no** option under the *[default-from-internal]* section of the pjsip.conf file specifies that the endpoint should not use direct media for incoming calls from internal sources.
 
@@ -190,12 +193,12 @@ The **max_contacts = 1** option under the *[default-aors]* section of the pjsip.
    :lines: 35-60
 
 [isdn-1/isdn-2/gsm](default-aors)
----------------------------------
+----------------------------------
 
 **[isdn-1/isdn-2/gsm](default-aors)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interfaces. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm sections sets up the common options for all AORs defined in the system.
 
 [isdn-1/isdn-2/gsm](default-password)
---------------------------------------------------------------------------------
+---------------------------------------
 
 **[isdn-1/isdn-2/gsm](default-password)** in *pjsip.conf* refers to a set of "Address Of Record" (AOR) configurations for the ISDN 1/ISDN 2/GSM interfaces. An AOR is a unique identifier for a SIP endpoint or user, and the isdn-1/isdn-2/gsm sections sets up the common options for all AORs defined in the system.
 
