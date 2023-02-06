@@ -72,7 +72,7 @@ sudo systemctl restart asterisk
   <img src="https://contrib.rocks/image?repo=attilasomogyi/asterisk-configuration-files" />
 </a>
 
-## License
+## [License](https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/LICENSE)
 
 <p>
   <img
