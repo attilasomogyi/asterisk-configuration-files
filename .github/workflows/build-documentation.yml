@@ -34,7 +34,7 @@ jobs:
           npm install -g markdownlint-cli
           pip install -U sphinx furo sphinx-copybutton sphinx-toolbox
           docs_source_pages="docs/source/pages"
-          flags="--from gfm --to rst -o"
+          flags="--from gfm --to rst -s -o"
           pandoc SUPPORT.md $flags $docs_source_pages/support.rst
           pandoc SECURITY.md $flags $docs_source_pages/security.rst
           pandoc CODE_OF_CONDUCT.md $flags $docs_source_pages/code-of-conduct.rst

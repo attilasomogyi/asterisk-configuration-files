@@ -1,12 +1,8 @@
-<h1 align="center">
-   Asterisk Configuration Files
-</h1>
+# Asterisk Configuration Files
 
-<p align="center">
 Asterisk Configuration Files provide a method to configure the settings and behavior of the Asterisk PBX system. These files are typically in a .conf format and include settings for SIP, PJSIP, and extensions, among others.
-</p>
 
-<p align="center">
+<p align="left">
   <img
     src="https://img.shields.io/github/v/release/attilasomogyi/asterisk-configuration-files"
     alt="GitHub release (latest SemVer)"
