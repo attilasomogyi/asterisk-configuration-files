@@ -100,7 +100,7 @@ exten => _0690XXXXXX,1,Hangup/_0681XXXXXX,1,Hangup
 exten => _06[237]0XXXXXXX,1,Ringing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The line **exten => _06[237]0XXXXXXX,1,Ringing** in the extensions.conf file is a dial plan definition. It specifies that when a call is made to a phone number starting with 06 followed by either 2, 3 or 7 and then 7 digits, the Asterisk PBX should play the "Ringing" sound to the caller, indicating that the call is ringing on the recipient's side.
+The line **exten => _06[237]0XXXXXXX/_0036[237]0XXXXXXX,1,Ringing** in the extensions.conf file is a dial plan definition. It specifies that when a call is made to a phone number starting with 06 followed by either 2, 3 or 7 and then 7 digits, the Asterisk PBX should play the "Ringing" sound to the caller, indicating that the call is ringing on the recipient's side.
 
 same => 2,Dial(SIP/${EXTEN}@gsm,60)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
