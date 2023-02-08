@@ -15,7 +15,7 @@ jobs:
 
       - uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: pandoc
+          packages: pandoc minify
 
       - name: Pyhton Cache
         uses: actions/setup-python@v4
@@ -48,6 +48,7 @@ jobs:
           docroot=`mktemp -d`
           rsync -av "docs/build/html/" "${docroot}/"
           pushd "${docroot}"
+          minify --all
           git init
           git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git checkout -b gh-pages
