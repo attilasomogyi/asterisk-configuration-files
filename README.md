@@ -47,7 +47,27 @@ Asterisk Configuration Files provide a method to configure the settings and beha
 
 ## Installation
 
-- Steps
+### AlmaLinux
+
+```shell
+sudo dnf install asterisk
+```
+
+### Arch Linux
+
+```shell
+sudo pacman --sync --refresh --sysupgrade asterisk
+```
+
+### Debian/Ubuntu Linux
+
+```shell
+sudo apt update
+sudo apt upgrade
+sudo apt install asterisk
+```
+
+## Usage
 
 ```shell
 git clone https://github.com/attilasomogyi/asterisk-configuration-files.git
@@ -55,10 +75,6 @@ sudo cp -r /etc/asterisk /etc/asterisk-backup-$(date --iso-8601=seconds)
 sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
 sudo systemctl restart asterisk
 ```
-
-## Usage
-
-- Usage
 
 ### [Documentation](https://attilasomogyi.github.io/asterisk-configuration-files)
 
