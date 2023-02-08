@@ -30,4 +30,4 @@ jobs:
 
   build-documentation:
     needs: [auto-release]
-    uses: "${{ GITHUB_REPOSITORY_OWNER }}/${{ github.repository }}/.github/workflows/build-documentation.yml@main"
+    uses: build-documentation.yml@main
