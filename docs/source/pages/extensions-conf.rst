@@ -134,4 +134,5 @@ same => 8,Dial(SIP/${EXTEN}\@isdn-2,60)
 
 exten => _06XXXXXXXX,1,Ringing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 In extensions.conf, the line "exten => _06XXXXXXXX,1,Ringing" defines a dial plan rule. The rule specifies that if an incoming call matches the pattern "_06XXXXXXXX" (i.e. the caller ID starts with "06"), the first action to be taken is to initiate a "Ringing" signal. This signals the intended recipient of the call that there is an incoming call waiting to be answered.
