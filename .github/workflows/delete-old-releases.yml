@@ -17,7 +17,7 @@ on:
         type: number
 
 env:
-  keep_latest: 1
+  keep_latest: 3
 
 jobs:
   delete-old-releases:
@@ -37,7 +37,7 @@ jobs:
           fi
           releases=($(gh release list | awk -F '\t' '{ print $1 }'))
           release_number=${#releases[@]}
-          index=$(($keep_latest - 1))
+          index=$keep_latest
           while [ $index -lt $release_number ]; do
             gh release delete ${releases[$index]} -y &
             index=$(($index + 1))

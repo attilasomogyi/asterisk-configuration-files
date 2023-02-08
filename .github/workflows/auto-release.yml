@@ -36,4 +36,4 @@ jobs:
     needs: [auto-release]
     uses: "./.github/workflows/delete-old-releases.yml"
     with:
-      keep_latest: 2
+      keep_latest: 1
