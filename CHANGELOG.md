@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/attilasomogyi/asterisk-configuration-files/compare/v1.0.0...v1.1.0) (2023-02-08)
+
+
+### Features
+
+* **docs:** add install sections ([d653f95](https://github.com/attilasomogyi/asterisk-configuration-files/commit/d653f95e3590eaf20b5a1e0829e1806643395cbc))
+
 # 1.0.0 (2023-02-08)
 
 
