@@ -47,8 +47,8 @@ jobs:
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           docroot=`mktemp -d`
           rsync -av "docs/build/html/" "${docroot}/"
+          minify --all --recursive --output "${docroot}" "docs/build/html/*"
           pushd "${docroot}"
-          minify --all --recursive *
           git init
           git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git checkout -b gh-pages
