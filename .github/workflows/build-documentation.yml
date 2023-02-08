@@ -48,7 +48,7 @@ jobs:
           docroot=`mktemp -d`
           rsync -av "docs/build/html/" "${docroot}/"
           pushd "${docroot}"
-          minify --all
+          minify --all --recursive *
           git init
           git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git checkout -b gh-pages
