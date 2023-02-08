@@ -125,9 +125,9 @@ The line **same => 5,Dial(SIP/${EXTEN}@isdn-1,60)** in extensions.conf is a Dial
 same => 6,GotoIf($[${DIALSTATUS}=CHANUNAVAIL]?:8)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The line "same => 6,GotoIf($[${DIALSTATUS}=CHANUNAVAIL]?:8)?" in the extensions.conf file is a conditional branch in the dialplan. It tests the result of the previous Dial command, which dials the specified destination. If the result of the Dial command is "CHANUNAVAIL" (i.e., the destination is unavailable), the dialplan execution jumps to the next priority level marked as "8".
+The line **same => 6,GotoIf($[${DIALSTATUS}=CHANUNAVAIL]?:8)?** in the extensions.conf file is a conditional branch in the dialplan. It tests the result of the previous Dial command, which dials the specified destination. If the result of the Dial command is "CHANUNAVAIL" (i.e., the destination is unavailable), the dialplan execution jumps to the next priority level marked as "8".
 
 same => 8,Dial(SIP/${EXTEN}@isdn-2,60)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-"same => 8,Dial(SIP/${EXTEN}@isdn-2,60)" in extensions.conf refers to a dial plan statement in Asterisk. It specifies that if the previous priority is completed and execution is at priority 8, a call should be made using SIP protocol to the destination number specified by the ${EXTEN} variable at endpoint isdn-2, with a maximum ring time of 60 seconds.
+**same => 8,Dial(SIP/${EXTEN}@isdn-2,60)** in extensions.conf refers to a dial plan statement in Asterisk. It specifies that if the previous priority is completed and execution is at priority 8, a call should be made using SIP protocol to the destination number specified by the ${EXTEN} variable at endpoint isdn-2, with a maximum ring time of 60 seconds.
