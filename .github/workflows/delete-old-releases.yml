@@ -1,0 +1,46 @@
+name: Delete Old Releases
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+  workflow_call:
+    inputs:
+      keep_latest:
+        required: true
+        type: number
+
+env:
+  keep_latest: 1
+
+jobs:
+  delete-old-releases:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Delete Old Releases
+        run: |
+          if [ -n "${{ inputs.keep_latest }}" ]; then
+            keep_latest=${{ inputs.keep_latest }}
+          fi
+          if ! [[ "$keep_latest" =~ ^[0-9]+$ && "$keep_latest" -gt 0 ]]; then
+             echo "Error: keep_latest variable must be pozitive integer and not zero"
+             exit 1
+          fi
+          releases=($(gh release list | awk -F '\t' '{ print $1 }'))
+          release_number=${#releases[@]}
+          index=$(($keep_latest - 1))
+          while [ $index -lt $release_number ]; do
+            gh release delete ${releases[$index]} -y &
+            index=$(($index + 1))
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

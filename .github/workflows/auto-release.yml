@@ -31,3 +31,7 @@ jobs:
   build-documentation:
     needs: [auto-release]
     uses: "./.github/workflows/build-documentation.yml"
+
+  delete-old-releases:
+    needs: [auto-release]
+    uses: "./.github/workflows/delete-old-releases.yml"
