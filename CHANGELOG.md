@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/attilasomogyi/asterisk-configuration-files/compare/v1.1.0...v1.2.0) (2023-02-09)
+
+
+### Features
+
+* **docs:** add openwrt install section ([009a619](https://github.com/attilasomogyi/asterisk-configuration-files/commit/009a619e4934bddcdca6fa05c57eff355a37cea3))
+
 # [1.1.0](https://github.com/attilasomogyi/asterisk-configuration-files/compare/v1.0.0...v1.1.0) (2023-02-08)
 
 
