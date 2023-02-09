@@ -67,6 +67,13 @@ sudo apt upgrade
 sudo apt install asterisk
 ```
 
+### OpenWrt
+
+```shell
+opkg update
+opkg install asterisk asterisk-pjsip asterisk-bridge-simple asterisk-codec-alaw asterisk-codec-ulaw asterisk-res-rtp-asterisk
+```
+
 ## Usage
 
 ```shell
