@@ -17,7 +17,7 @@ jobs:
         with:
           packages: pandoc minify
 
-      - name: Pyhton Cache
+      - name: Python Cache
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
