@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/attilasomogyi/asterisk-configuration-files/compare/v1.2.0...v1.2.1) (2023-02-14)
+
+
+### Bug Fixes
+
+* **docs:** fix broken links ([c4ef854](https://github.com/attilasomogyi/asterisk-configuration-files/commit/c4ef85481259a5414274396ed2ea8b81c6c772d8))
+
 # [1.2.0](https://github.com/attilasomogyi/asterisk-configuration-files/compare/v1.1.0...v1.2.0) (2023-02-09)
 
 
