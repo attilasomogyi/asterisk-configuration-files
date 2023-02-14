@@ -144,7 +144,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 The Asterisk Configuration Files team reserves the right not to accept pull
 requests from community members who haven't been good citizens of the community.
 Such behavior includes not following the [Asterisk Configuration Files code of
-conduct](/CODE_OF_CONDUCT.md) and applies within or outside of Asterisk Configuration Files
+conduct][coc] and applies within or outside of Asterisk Configuration Files
 managed channels.
 
 #### Addressing review feedback
@@ -399,4 +399,4 @@ The content of the commit message body should contain:
 [html-css-style-guide]: https://google.github.io/styleguide/htmlcssguide.html
 [py-style-guide]: https://peps.python.org/pep-0008/
 [sql-style-guide]: https://github.com/treffynnon/sqlstyle.guide/blob/gh-pages/_includes/sqlstyle.guide.md
-[dev-doc]: /CONTRIBUTING.md
+[dev-doc]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CONTRIBUTING.md
