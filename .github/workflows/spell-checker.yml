@@ -24,8 +24,7 @@ jobs:
           packages: hunspell
 
       - name: Spell Check
-        run: |
-        find ./\
+        run: find ./\
         -type f\
         -regextype posix-extended\
         -regex "^.*\.($env.file_extensions)$"\
