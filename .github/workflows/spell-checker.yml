@@ -28,7 +28,7 @@ jobs:
           find ./\
            -type f\
            -regextype posix-extended\
-           -regex "^.*\.($env.file_extensions)$"\
+           -regex "^.*\.($file_extensions)$"\
            -exec  echo '{}' \;\
            -exec  dash -c "hunspell -d en_US -l {} | sort -u" \;\
            -exec  echo \;
