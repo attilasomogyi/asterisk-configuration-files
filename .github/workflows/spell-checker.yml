@@ -1,4 +1,4 @@
-name: Link Checker
+name: Spell Checker
 
 on:
   workflow_dispatch:
