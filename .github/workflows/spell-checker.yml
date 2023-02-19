@@ -7,7 +7,7 @@ on:
     workflows: [auto-release]
     types:
       - completed
-   
+
 env:
   file_extensions: md|rst|txt|yml|conf|json|py
 
@@ -24,11 +24,12 @@ jobs:
           packages: hunspell
 
       - name: Spell Check
-        run: find ./\
-        -type f\
-        -regextype posix-extended\
-        -regex "^.*\.($env.file_extensions)$"\
-        -exec  echo '{}' \;\
-        -exec  dash -c "hunspell -d en_US -l {} | sort -u" \;\
-        -exec  echo \;
+        run: |
+          find ./\
+           -type f\
+           -regextype posix-extended\
+           -regex "^.*\.($env.file_extensions)$"\
+           -exec  echo '{}' \;\
+           -exec  dash -c "hunspell -d en_US -l {} | sort -u" \;\
+           -exec  echo \;
         shell: dash -e {0}
