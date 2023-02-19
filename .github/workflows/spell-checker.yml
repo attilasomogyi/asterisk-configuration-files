@@ -1,0 +1,35 @@
+name: Link Checker
+
+on:
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: [auto-release]
+    types:
+      - completed
+
+env:
+  file_extensions: md|rst|txt|yml|conf|json|py
+
+jobs:
+  linkchecker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: hunspell
+
+      - name: Spell Check
+        run: |
+          find ./\
+           -type f\
+           -regextype posix-extended\
+           -regex "^.*\.($env.file_extensions)$"\
+           -exec  echo '{}' \;\
+           -exec  dash -c "hunspell -d en_US -l {} | sort -u" \;\
+           -exec  echo \;
+        shell: dash -e {0}
