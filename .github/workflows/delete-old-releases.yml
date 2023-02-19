@@ -1,4 +1,4 @@
-name: Delete Old Releases
+name: delete-old-releases
 on:
   push:
     branches:

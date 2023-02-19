@@ -1,4 +1,4 @@
-name: Delete Old Workflow Runs
+name: delete-old-workflow-runs
 on:
   push:
     branches:

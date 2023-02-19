@@ -1,4 +1,4 @@
-name: Spell Checker
+name: spell-checker
 
 on:
   workflow_dispatch:
