@@ -19,9 +19,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: latest
+
+      - name: Install cspell
         run: npm install -g cspell
 
       - name: Spell Check
-        run: |
-          cspell lint --fail-fast .
+        run: cspell lint --fail-fast .
         shell: dash -e {0}
