@@ -8,9 +8,6 @@ on:
     types:
       - completed
 
-env:
-  file_extensions: md|rst|txt|yml|conf|json|py
-
 jobs:
   linkchecker:
     runs-on: ubuntu-latest
@@ -19,17 +16,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - uses: awalsh128/cache-apt-pkgs-action@latest
+      - uses: actions/setup-node@v3
         with:
-          packages: hunspell
+        node-version: 16
+- run: npm ci
 
       - name: Spell Check
         run: |
-          find ./\
-           -type f\
-           -regextype posix-extended\
-           -regex "^.*\.($file_extensions)$"\
-           -exec  echo '{}' \;\
-           -exec  dash -c "hunspell -d en_US -l {} | sort -u" \;\
-           -exec  echo \;
+          cspell lint --fail-fast .
         shell: dash -e {0}
