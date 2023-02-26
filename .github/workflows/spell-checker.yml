@@ -18,8 +18,8 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-        node-version: 16
-- run: npm ci
+          node-version: latest
+        run: npm install -g cspell
 
       - name: Spell Check
         run: |

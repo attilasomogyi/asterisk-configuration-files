@@ -1,0 +1,7 @@
+~openwrt
+~opkg
+~pacman
+~popd
+~pushd
+~sphinxopts
+~sysupgrade
