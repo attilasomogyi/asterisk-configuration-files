@@ -1,0 +1,33 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "useGitignore": true,
+  "dictionaries": [
+    "custom-asterisk",
+    "custom-linux-distributions",
+    "custom-sphinx",
+    "custom-usernames"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-asterisk",
+      "path": "./.cspell/custom-asterisk.txt",
+      "addWords": true
+    },
+    {
+      "name": "custom-linux-distributions",
+      "path": "./.cspell/custom-linux-distributions.txt",
+      "addWords": true
+    },
+    {
+      "name": "custom-sphinx",
+      "path": "./.cspell/custom-sphinx.txt",
+      "addWords": true
+    },
+    {
+      "name": "custom-usernames",
+      "path": "./.cspell/custom-usernames.txt",
+      "addWords": true
+    }
+  ]
+}
