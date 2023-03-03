@@ -1,3 +1,4 @@
+.. include:: metadata.txt
 queues.conf
 ================
 
