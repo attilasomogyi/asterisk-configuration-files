@@ -1,3 +1,4 @@
+include:: metadata.rst
 extensions.conf
 ================
 
