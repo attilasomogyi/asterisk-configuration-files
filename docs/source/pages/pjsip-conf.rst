@@ -1,4 +1,5 @@
-.. include:: metadata.txt
+.. include:: ../metadata.txt
+
 pjsip.conf
 =================
 
