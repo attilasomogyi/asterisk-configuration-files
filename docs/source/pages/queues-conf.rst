@@ -1,4 +1,4 @@
-include:: metadata.rst
+.. include:: metadata.txt
 queues.conf
 ================
 
