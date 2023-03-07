@@ -1,0 +1,30 @@
+{
+  "name": "asterisk-configuration-files",
+  "version": "1.2.1",
+  "description": "Asterisk configuration files",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "sh ./scripts/ci/*.sh",
+    "prepare": "npm exec is-ci || npm exec husky install"
+  },
+  "keywords": [
+    "config",
+    "configuration",
+    "asterisk",
+    "asterisk-dialplan",
+    "asterisk-pbx",
+    "asterisk-server"
+  ],
+  "author": "Attila Zsolt Somogyi",
+  "license": "MIT",
+  "devDependencies": {
+    "cspell": "latest",
+    "husky": "latest",
+    "is-ci": "latest",
+    "prettier": "latest",
+    "@commitlint/config-conventional": "latest"
+  }
+}
