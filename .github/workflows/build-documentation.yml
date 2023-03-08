@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          yarn global markdownlint-cli
+          yarn global add markdownlint-cli
           pip install -U sphinx furo sphinx-copybutton sphinx-toolbox
           docs_source_pages="docs/source/pages"
           flags="--from gfm --to rst -s -o"
