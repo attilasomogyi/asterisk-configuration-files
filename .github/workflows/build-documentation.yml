@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-documentation:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -17,17 +17,21 @@ jobs:
         with:
           packages: pandoc minify
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+
       - name: Python Cache
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
+          python-version: "3.11"
           cache: "pip"
 
       - name: Build Documentation
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm install -g markdownlint-cli
+          yarn install markdownlint-cli
           pip install -U sphinx furo sphinx-copybutton sphinx-toolbox
           docs_source_pages="docs/source/pages"
           flags="--from gfm --to rst -s -o"
