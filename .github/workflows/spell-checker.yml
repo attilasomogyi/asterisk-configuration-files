@@ -21,7 +21,7 @@ jobs:
           node-version: latest
 
       - name: Install cspell
-        run: yarn add cspell
+        run: yarn global add cspell
 
       - name: Spell Check
         run: cspell lint --fail-fast .
