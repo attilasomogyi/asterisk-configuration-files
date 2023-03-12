@@ -2,6 +2,12 @@
   "version": "0.2",
   "language": "en",
   "useGitignore": true,
+  "cache": {
+    "useCache": true,
+    "cacheStrategy": "content",
+    "cacheFormat": "universal",
+    "cacheLocation": "./.cspell/cache/cspell-cache"
+  },
   "dictionaries": [
     "custom-asterisk",
     "custom-linux-distributions",
