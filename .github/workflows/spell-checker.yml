@@ -24,6 +24,12 @@ jobs:
       - name: Install cspell
         run: yarn global add cspell
 
+      - name: Spell Check Cache
+        uses: actions/cache@v3
+        with:
+          path: ./.cspell/cache/cspell-cache
+          key: ${{ runner.os }}-cspell-${{ hashFiles('**/.cspell.json') }}
+
       - name: Spell Check
         run: cspell lint --fail-fast .
         shell: dash -e {0}
