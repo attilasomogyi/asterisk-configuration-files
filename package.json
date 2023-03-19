@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "for script in $(find ./tests -name '*.sh'); do sh -e $script || exit 1; done",
+    "test": "bats --recursive ./tests/",
     "prepare": "is-ci || husky install"
   },
   "keywords": [

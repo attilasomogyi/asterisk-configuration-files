@@ -6,3 +6,4 @@
 ~sphinxopts
 ~sysupgrade
 ~commitlint
+~shellcheck
