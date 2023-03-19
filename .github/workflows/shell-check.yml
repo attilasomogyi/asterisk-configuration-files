@@ -1,0 +1,30 @@
+name: shell-check
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+  workflow_call:
+
+jobs:
+  shell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Shellcheck
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: shellcheck
+
+      - name: Shell Check
+        run: |
+          scripts=$(find . -name '*.sh')
+          for script in $scripts; do
+             shellcheck "$script"
+          done
+        shell: dash -e {0}
