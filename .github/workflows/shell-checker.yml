@@ -1,4 +1,4 @@
-name: shell-check
+name: shell-checker
 on:
   push:
     branches:
@@ -13,9 +13,12 @@ on:
   workflow_call:
 
 jobs:
-  shell-check:
+  shell-checker:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Install Shellcheck
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
