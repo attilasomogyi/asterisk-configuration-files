@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "sh ./scripts/ci/*.sh",
+    "test": "for script in $(ls ./scripts/ci/*.sh); do sh -e $script; done",
     "prepare": "is-ci || husky install"
   },
   "keywords": [
@@ -22,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "cspell": "latest",
-    "husky": "latest",
+    "husky": "^8.0.0",
     "is-ci": "latest",
     "prettier": "latest",
     "@commitlint/config-conventional": "latest"
