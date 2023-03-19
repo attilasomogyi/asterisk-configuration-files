@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "bats --recursive ./tests/",
+    "test": "bats --formatter pretty --recursive ./tests/",
     "prepare": "is-ci || husky install"
   },
   "keywords": [
