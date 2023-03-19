@@ -19,7 +19,7 @@ What kind of change does this PR introduce?
 - [ ] Build related changes
 - [ ] CI related changes
 - [ ] Documentation content changes
-- [ ] plantuml-settings application / infrastructure changes
+- [ ] Asterisk Configuration Files / infrastructure changes
 - [ ] Other... Please describe:
 
 ## What is the current behavior?
