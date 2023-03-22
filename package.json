@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "bats --formatter pretty --recursive ./tests/",
+    "test": "yarn bats --formatter pretty --recursive ./tests/",
     "prepare": "is-ci || husky install"
   },
   "keywords": [
@@ -22,9 +22,12 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "latest",
+    "@prantlf/jsonlint": "latest",
+    "bats": "latest",
     "cspell": "latest",
-    "husky": "^8.0.0",
+    "husky": "latest",
     "is-ci": "latest",
-    "prettier": "latest"
+    "prettier": "latest",
+    "prettier-plugin-sh": "latest"
   }
 }
