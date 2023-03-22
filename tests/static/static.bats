@@ -4,26 +4,40 @@ function print_errors() {
   done
 }
 
+function shellcheck-test() {
+  shellcheck_url="https://github.com/koalaman/shellcheck"
+
+  which shellcheck >/dev/null || {
+    echo "shellcheck not found, please install: $shellcheck_url"
+    exit 1
+  }
+
+  scripts=$(find . -name '*.sh')
+  for script in $scripts; do
+    shellcheck "$script"
+  done
+}
+
 @test "jsonlint" {
-  run dash ./tests/static/jsonlint.sh
+  run yarn jsonlint
   print_errors
   [ "$status" -eq 0 ]
 }
 
 @test "actionlint" {
-  run dash ./tests/static/actionlint.sh
+  run actionlint
   print_errors
   [ "$status" -eq 0 ]
 }
 
 @test "cspell" {
-  run dash ./tests/static/cspell.sh
+  run yarn cspell lint --fail-fast .
   print_errors
   [ "$status" -eq 0 ]
 }
 
 @test "shellcheck" {
-  run dash ./tests/static/shellcheck.sh
+  run shellcheck-test
   print_errors
   [ "$status" -eq 0 ]
 }
