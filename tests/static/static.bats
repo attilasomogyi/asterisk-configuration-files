@@ -4,7 +4,7 @@ function print_errors() {
   done
 }
 
-function shellcheck-test() {
+function shellcheck_test() {
   shellcheck_url="https://github.com/koalaman/shellcheck"
 
   which shellcheck >/dev/null || {
@@ -37,7 +37,7 @@ function shellcheck-test() {
 }
 
 @test "shellcheck" {
-  run shellcheck-test
+  run shellcheck_test
   print_errors
   [ "$status" -eq 0 ]
 }
