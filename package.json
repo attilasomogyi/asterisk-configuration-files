@@ -21,10 +21,10 @@
   "author": "Attila Zsolt Somogyi",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/config-conventional": "latest",
     "cspell": "latest",
     "husky": "^8.0.0",
     "is-ci": "latest",
-    "prettier": "latest",
-    "@commitlint/config-conventional": "latest"
+    "prettier": "latest"
   }
 }
