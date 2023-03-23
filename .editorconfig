@@ -15,6 +15,25 @@ max_line_length = 79
 indent_size = 4
 
 [*.md]
-insert_final_newline = false
-trim_trailing_whitespace = false
-max_line_length = 80
+max_line_length = 120
+indent_size = unset
+
+[CHANGELOG.md]
+max_line_length = unset
+indent_size = unset
+
+[*.rst]
+indent_size = unset
+
+[metadata.txt]
+indent_size = unset
+
+[Makefile]
+indent_style = tab
+
+[*.bat]
+indent_style = tab
+end_of_line = crlf
+
+[cspell-cache]
+insert_final_newline = unset

@@ -28,6 +28,6 @@ jobs:
         run: |
           scripts=$(find . -name '*.sh')
           for script in $scripts; do
-             shellcheck "$script"
+            shellcheck "$script"
           done
         shell: dash -e {0}

@@ -18,7 +18,7 @@ The **[global]** section in the *pjsip.conf* configuration file is used to speci
    :lines: 1-3
 
 type = global
-~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~
 
 In PJSIP, **type = global** under the *[global]* section of the pjsip.conf file specifies that the configuration block following the line is a global configuration block. The options specified in this block will be applied globally to all PJSIP endpoints and transactions.
 

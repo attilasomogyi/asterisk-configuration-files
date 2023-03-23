@@ -41,3 +41,9 @@ function shellcheck_test() {
   print_errors
   [ "$status" -eq 0 ]
 }
+
+@test "editorconfig-checker" {
+  run editorconfig-checker
+  print_errors
+  [ "$status" -eq 0 ]
+}
