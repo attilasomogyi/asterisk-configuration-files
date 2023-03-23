@@ -29,8 +29,8 @@ jobs:
       - name: Delete Old Releases
         run: |
           if ! [[ "$keep_latest" =~ ^[0-9]+$ && "$keep_latest" -gt 0 ]]; then
-             echo "Error: keep_latest variable must be pozitive integer and not zero"
-             exit 1
+            echo "Error: keep_latest variable must be pozitive integer and not zero"
+            exit 1
           fi
           mapfile -t releases < <(gh release list | awk -F '\t' '{ print $1 }')
           release_number="${#releases[@]}"

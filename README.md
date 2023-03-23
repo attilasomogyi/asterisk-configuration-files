@@ -1,6 +1,7 @@
 # Asterisk Configuration Files
 
-Asterisk Configuration Files provide a method to configure the settings and behavior of the Asterisk PBX system. These files are typically in a .conf format and include settings for SIP, PJSIP, and extensions, among others.
+Asterisk Configuration Files provide a method to configure the settings and behavior of the Asterisk PBX system.
+These files are typically in a .conf format and include settings for SIP, PJSIP, and extensions, among others.
 
 <p align="left">
   <img
@@ -71,7 +72,13 @@ sudo apt install asterisk
 
 ```shell
 opkg update
-opkg install asterisk asterisk-pjsip asterisk-bridge-simple asterisk-codec-alaw asterisk-codec-ulaw asterisk-res-rtp-asterisk
+opkg install \
+  asterisk \
+  asterisk-pjsip \
+  asterisk-bridge-simple \
+  asterisk-codec-alaw \
+  asterisk-codec-ulaw \
+  asterisk-res-rtp-asterisk
 ```
 
 ## Usage

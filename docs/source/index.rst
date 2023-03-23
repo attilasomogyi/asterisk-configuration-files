@@ -1,5 +1,5 @@
 .. include:: metadata.txt
-   
+
 Welcome to Asterisk Configuration Files's documentation!
 ========================================================
 
@@ -17,7 +17,7 @@ Contents
 .. toctree::
    :caption: Readme
 
-   pages/readme   
+   pages/readme
 
 .. toctree::
    :caption: pjsip.conf
@@ -55,7 +55,7 @@ Contents
 
 ..   pages/changelog
 
-.. toctree:: 
+.. toctree::
    :caption: Security
 
    pages/security

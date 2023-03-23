@@ -1,8 +1,8 @@
 # Contributing to Asterisk Configuration Files
 
-We would love for you to contribute to Asterisk Configuration Files and help make
-it even better than it is today! As a contributor, here are the guidelines we
-would like you to follow:
+We would love for you to contribute to Asterisk Configuration Files and help
+make it even better than it is today! As a contributor, here are the guidelines
+we would like you to follow:
 
 - [Code of Conduct](#code-of-conduct)
 - [Question or Problem?](#got-a-question-or-problem)
