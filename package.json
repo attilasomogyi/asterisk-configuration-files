@@ -27,6 +27,7 @@
     "cspell": "latest",
     "husky": "latest",
     "is-ci": "latest",
+    "markdownlint-cli": "latest",
     "prettier": "latest",
     "prettier-plugin-sh": "latest"
   }

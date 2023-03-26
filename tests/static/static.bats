@@ -29,3 +29,9 @@ load test_helper/static.bash
   print_errors
   [ "$status" -eq 0 ]
 }
+
+@test "markdownlint-cli" {
+  run yarn markdownlint '**/*.md'
+  print_errors
+  [ "$status" -eq 0 ]
+}
