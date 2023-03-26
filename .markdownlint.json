@@ -1,0 +1,8 @@
+{
+  "default": true,
+  "line-length": false,
+  "MD001": false,
+  "MD024": false,
+  "MD033": { "allowed_elements": ["a", "p", "img"] },
+  "MD041": false
+}
