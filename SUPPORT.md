@@ -8,9 +8,9 @@ But if you have any questions.
 
 Do not open issues for general support questions as we want to keep GitHub
 issues for bug reports and feature requests. Instead, we recommend using [Stack
-Overflow](https://stackoverflow.com/questions/tagged/asterisk-configuration-files) to ask
+Overflow](https://stackoverflow.com/questions/tagged/asterisk) to ask
 support-related questions. When creating a new question on Stack Overflow, make
-sure to add the `asterisk-configuration-files` tag.
+sure to add the `asterisk` tag.
 
 Stack Overflow is a much better place to ask questions since:
 
