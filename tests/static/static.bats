@@ -35,3 +35,4 @@ load test_helper/static.bash
   print_errors
   [ "$status" -eq 0 ]
 }
+

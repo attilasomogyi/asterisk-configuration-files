@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+# shellcheck disable=SC2154
 function print_errors() {
   for line in "${lines[@]}"; do
     echo "$line"
   done
 }
+# shellcheck enable=all
 
 function shellcheck_test() {
   shellcheck_url="https://github.com/koalaman/shellcheck"
@@ -14,7 +16,7 @@ function shellcheck_test() {
     exit 1
   }
 
-  scripts=$(find . -name '*.sh' -name '*.bash')
+  scripts=$(git ls-files --cached --modified --other --exclude-standard --deduplicate | grep --extended-regexp '\.sh$|\.bash$')
   for script in $scripts; do
     shellcheck "$script"
   done
