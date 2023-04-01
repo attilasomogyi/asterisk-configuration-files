@@ -36,3 +36,15 @@ load test_helper/static.bash
   [ "$status" -eq 0 ]
 }
 
+@test "rstcheck" {
+  run rstcheck --recursive .
+  print_errors
+  [ "$status" -eq 0 ]
+}
+
+@test "sphinx doctest and linkcheck" {
+  run sphinx_doctest_and_linkcheck
+  print_errors
+  [ "$status" -eq 0 ]
+}
+

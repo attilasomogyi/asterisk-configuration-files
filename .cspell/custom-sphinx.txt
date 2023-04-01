@@ -18,3 +18,7 @@
 ~sourcedir
 ~builddir
 ~errorlevel
+~rstcheck
+~doctest
+~pandoc
+~linkcheck
