@@ -1,3 +1,4 @@
+---
 name: delete-old-workflow-runs
 on:
   push:

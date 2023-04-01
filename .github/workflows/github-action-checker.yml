@@ -1,3 +1,4 @@
+---
 name: github-action-checker
 on:
   push:

@@ -10,3 +10,4 @@
 ~jsonlint
 ~markdownlint
 ~nproc
+~yamllint

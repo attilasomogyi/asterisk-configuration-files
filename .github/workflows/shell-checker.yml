@@ -1,3 +1,4 @@
+---
 name: shell-checker
 on:
   push:

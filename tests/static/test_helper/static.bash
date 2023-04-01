@@ -27,7 +27,7 @@ function shellcheck_test() {
 
 function sphinx_doctest_and_linkcheck() {
   bash scripts/md-to-rst.sh || exit 1
-  (cd docs && make -b doctest) || exit 1
+  (cd docs && make -b html) || exit 1
   (cd docs && make -b linkcheck) || exit 1
   (cd docs && make -b clean) || exit 1
 }

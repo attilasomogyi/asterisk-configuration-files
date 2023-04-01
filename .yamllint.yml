@@ -1,0 +1,10 @@
+---
+ignore-from-file: .gitignore
+extends: default
+
+rules:
+  document-start:
+    level: error
+  line-length:
+    max: 125
+    level: error
