@@ -1,3 +1,4 @@
+---
 name: delete-old-releases
 on:
   push:
