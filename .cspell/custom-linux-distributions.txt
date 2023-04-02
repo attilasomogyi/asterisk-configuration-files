@@ -11,3 +11,4 @@
 ~markdownlint
 ~nproc
 ~yamllint
+~gitleaks
