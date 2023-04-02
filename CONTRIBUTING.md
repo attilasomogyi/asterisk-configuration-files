@@ -19,22 +19,7 @@ Please read and follow our [Code of Conduct][coc].
 
 ## Got a Question or Problem?
 
-Do not open issues for general support questions as we want to keep GitHub
-issues for bug reports and feature requests. Instead, we recommend using [Stack
-Overflow](https://stackoverflow.com/questions/tagged/asterisk) to ask
-support-related questions. When creating a new question on Stack Overflow, make
-sure to add the `asterisk` tag.
-
-Stack Overflow is a much better place to ask questions since:
-
-- there are thousands of people willing to help on Stack Overflow
-- questions and answers stay available for public viewing so your
-  question/answer might help someone else
-- Stack Overflow's voting system assures that the best answers are prominently
-  visible.
-
-To save your and our time, we will systematically close all issues that are
-requests for general support and redirect people to Stack Overflow.
+Please read the [support]
 
 ## Found a Bug?
 
@@ -400,3 +385,4 @@ The content of the commit message body should contain:
 [py-style-guide]: https://peps.python.org/pep-0008/
 [sql-style-guide]: https://github.com/treffynnon/sqlstyle.guide/blob/gh-pages/_includes/sqlstyle.guide.md
 [dev-doc]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CONTRIBUTING.md
+[support]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/SUPPORT.md

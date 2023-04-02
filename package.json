@@ -31,5 +31,8 @@
     "markdownlint-cli": "latest",
     "prettier": "latest",
     "prettier-plugin-sh": "latest"
+  },
+  "dependencies": {
+    "jscpd": "^3.5.4"
   }
 }
