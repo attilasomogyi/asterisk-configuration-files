@@ -1,6 +1,0 @@
-furo
-rstcheck
-sphinx
-sphinx-copybutton
-sphinx-toolbox
-yamllint

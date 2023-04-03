@@ -9,7 +9,7 @@
   "scripts": {
     "test": "yarn bats --formatter pretty --recursive ./tests/",
     "prepare": "is-ci || husky install",
-    "setup": "yarn && pip install -r requirement.txt --break-system-packages"
+    "setup": "yarn && pip install -r requirements.txt --break-system-packages"
   },
   "keywords": [
     "config",
