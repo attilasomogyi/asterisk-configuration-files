@@ -9,7 +9,7 @@
   "scripts": {
     "test": "yarn bats --formatter pretty --recursive ./tests/",
     "prepare": "is-ci || husky install",
-    "setup": "yarn && pip install -r requirements.txt"
+    "setup": "yarn && pip install -r requirement.txt --break-system-packages"
   },
   "keywords": [
     "config",
@@ -24,15 +24,16 @@
   "devDependencies": {
     "@commitlint/config-conventional": "latest",
     "@prantlf/jsonlint": "latest",
+    "@secretlint/secretlint-rule-preset-recommend": "latest",
     "bats": "latest",
     "cspell": "latest",
     "husky": "latest",
     "is-ci": "latest",
+    "jscpd": "^3.5.4",
     "markdownlint-cli": "latest",
     "prettier": "latest",
-    "prettier-plugin-sh": "latest"
+    "prettier-plugin-sh": "latest",
+    "secretlint": "latest"
   },
-  "dependencies": {
-    "jscpd": "^3.5.4"
-  }
+  "dependencies": {}
 }
