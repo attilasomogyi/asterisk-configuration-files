@@ -12,3 +12,6 @@
 ~nproc
 ~yamllint
 ~gitleaks
+~ignorefile
+~trivy
+~vuln
