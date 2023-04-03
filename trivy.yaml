@@ -1,0 +1,9 @@
+---
+ignorefile: .gitignore
+
+scan:
+  scanner:
+    - vuln
+    - config
+    - license
+    - secret
