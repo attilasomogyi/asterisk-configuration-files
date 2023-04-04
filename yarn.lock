@@ -1727,7 +1727,7 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-jscpd@^3.5.4:
+jscpd@latest:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/jscpd/-/jscpd-3.5.4.tgz#08ae8a810be97b3588b9bcf4bb17d8ab50d15714"
   integrity sha512-h1qXUniAYoig7YBgwy/rVFXTsQiemU3Yox6n4xu5qE4T9+VVVuWzlHULHIaq+hnXUEMyTu5XVUOLssv2zwhrWg==

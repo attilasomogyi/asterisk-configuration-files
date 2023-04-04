@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function md_to_rts() {
   markdown_file="$1"
