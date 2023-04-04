@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "yarn bats --formatter pretty --recursive ./tests/",
+    "test": "yarn bats --jobs  \"$(nproc)\" --formatter pretty --recursive ./tests/",
     "prepare": "is-ci || husky install",
     "setup": "yarn && pip install -r requirements.txt --break-system-packages"
   },
@@ -29,7 +29,7 @@
     "cspell": "latest",
     "husky": "latest",
     "is-ci": "latest",
-    "jscpd": "^3.5.4",
+    "jscpd": "latest",
     "markdownlint-cli": "latest",
     "prettier": "latest",
     "prettier-plugin-sh": "latest",

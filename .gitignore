@@ -2,3 +2,5 @@ docs/build
 node_modules
 .cspell/cache/cspell-cache
 report
+styles/
+yarn-error.log
