@@ -1,12 +1,12 @@
-# Security Policy
+# Security policy
 
-## Supported Versions
+## Supported versions
 
 | Version | Supported |
 | ------- | --------- |
 | latest  | ✔️        |
 | <latest | ❌        |
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
 Please, reporting a vulnerabilities to project's contributors.
