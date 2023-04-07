@@ -2,5 +2,6 @@ docs/build
 node_modules
 .cspell/cache/cspell-cache
 report
-styles/
+styles/*
+!styles/Custom
 yarn-error.log
