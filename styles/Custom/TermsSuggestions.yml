@@ -4,7 +4,6 @@ ignorecase: false
 level: suggestion
 link: https://redhat-documentation.github.io/vale-at-red-hat/docs/main/reference-guide/termssuggestions/
 message: "Depending on the context, consider using '%s' rather than '%s'."
-#source: "https://redhat-documentation.github.io/supplementary-style-guide/#glossary-terms-conventions; IBM - Appendix C. Word usage, p. 300"
 action:
   name: replace
 swap:
@@ -21,11 +20,10 @@ swap:
   channel: repository
   client side|client-side: client-side (adjective)| client side (noun)
   Cloud: cloud
-  code: write
   crash: fail|lock up|stop|stop responding
   functionality: functions # IBM
   Hammer|x86_64|x86-64|x64|64-bit x86: AMD64
-  input|type: enter (followed by the text to enter in monospace) # https://redhat-documentation.github.io/supplementary-style-guide/#text-entry
+  input|type: enter (followed by the text to enter in monospace)
   jar: compress|archive (verb)
   Navigate|navigate: '"click", "select", "browse", or "go to"'
   recommend: direct users to take the recommended action

@@ -8,29 +8,28 @@ match: $sentence
 indicators:
   - ":"
 exceptions:
+  - AlmaLinux
+  - Arch
   - Azure
   - CLI
   - Code
   - Cosmos
+  - Debian
   - Docker
   - Emmet
   - I
   - Kubernetes
   - Linux
-  - macOS
   - Marketplace
   - MongoDB
+  - OpenWrt
   - REPL
   - Studio
   - TypeScript
   - URLs
-  - Visual
+  - Ubuntu
+  - Ubuntu
   - VS
+  - Visual
   - Windows
-  - AlmaLinux
-  - Debian
-  - Ubuntu
-  - Arch
-  - OpenWrt
-  - Debian/Ubuntu
-  - Ubuntu
+  - macOS
