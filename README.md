@@ -1,12 +1,12 @@
-# Asterisk Configuration Files
+# Asterisk configuration files
 
-Asterisk Configuration Files provide a method to configure the settings and behavior of the Asterisk PBX system.
-These files are typically in a .conf format and include settings for SIP, PJSIP, and extensions, among others.
+Asterisk Configuration Files offer a method to configure the settings and behavior of the Asterisk Private Branch Exchange system.
+These files are typically in a .conf format and include settings for Session Initiation Protocol and extensions, among others.
 
 <p align="left">
   <img
     src="https://img.shields.io/github/v/release/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub release (latest SemVer)"
+    alt="GitHub release latest SemVer"
   />
   <img
     src="https://img.shields.io/github/release-date/attilasomogyi/asterisk-configuration-files"
@@ -26,7 +26,7 @@ These files are typically in a .conf format and include settings for SIP, PJSIP,
   />
   <img
     src="https://img.shields.io/github/repo-size/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub repo size"
+    alt="GitHub repository size"
   />
   <img
     src="https://img.shields.io/github/downloads/attilasomogyi/asterisk-configuration-files/total"
@@ -34,7 +34,7 @@ These files are typically in a .conf format and include settings for SIP, PJSIP,
   />
   <img
     src="https://img.shields.io/github/downloads/attilasomogyi/asterisk-configuration-files/latest/total"
-    alt="GitHub release (latest by SemVer)"
+    alt="GitHub release latest by SemVer"
   />
   <img
     src="https://img.shields.io/github/commit-activity/y/attilasomogyi/asterisk-configuration-files"
@@ -60,7 +60,7 @@ sudo dnf install asterisk
 sudo pacman --sync --refresh --sysupgrade asterisk
 ```
 
-### Debian/Ubuntu Linux
+### Debian and Ubuntu Linux
 
 ```shell
 sudo apt update
@@ -107,7 +107,7 @@ sudo systemctl restart asterisk
   />
 <p/>
 
-## Project Status
+## Project status
 
 <p>
   <img
