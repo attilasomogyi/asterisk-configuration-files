@@ -1,7 +1,7 @@
 .. include:: metadata.txt
 
-Welcome to Asterisk Configuration Files's documentation!
-========================================================
+Welcome to asterisk configuration files's documentation
+=======================================================
 
 .. note::
 

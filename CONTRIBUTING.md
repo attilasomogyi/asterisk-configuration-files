@@ -1,84 +1,84 @@
-# Contributing to Asterisk Configuration Files
+# Contributing to asterisk configuration files
 
-We would love for you to contribute to Asterisk Configuration Files and help
-make it even better than it is today! As a contributor, here are the guidelines
-we would like you to follow:
+This Project would love for you to contribute to Asterisk Configuration Files and help
+make it even better than it's today. As a contributor, here are the guidelines
+Project wants you to follow:
 
-- [Code of Conduct](#code-of-conduct)
-- [Question or Problem?](#got-a-question-or-problem)
-- [Issues and Bugs](#found-a-bug)
-- [Feature Requests](#missing-a-feature)
-- [Submission Guidelines](#submission-guidelines)
-- [Coding Rules](#coding-rules)
-- [Commit Message Guidelines](#commit-message-format)
+- [Code of conduct](#code-of-conduct)
+- [Question or problem](#question-or-problem)
+- [Issues and bugs](#found-a-bug)
+- [Feature requests](#missing-a-feature)
+- [Submission guidelines](#submission-guidelines)
+- [Coding rules](#coding-rules)
+- [Commit message guidelines](#commit-message-format)
 
-## Code of Conduct
+## Code of conduct
 
-Help us keep Asterisk Configuration Files open and inclusive.
-Please read and follow our [Code of Conduct][coc].
+Help the Project keep Asterisk Configuration Files open and inclusive.
+Please read and follow [Code of conduct][coc] of the Project.
 
-## Got a Question or Problem?
+## Question or problem
 
 Please read the [support]
 
-## Found a Bug?
+## Found a bug
 
-If you find a bug in the source code, you can help us by [submitting an
-issue](#submitting-an-issue) to our [GitHub Repository][github]. Even better,
+If you find a bug in the source code, you can help the Project by [submitting an
+issue](#submitting-an-issue) to [GitHub Repository][github] of the Project. Even better,
 you can [submit a Pull Request](#submitting-a-pull-request) with a fix.
 
-## Missing a Feature?
+## Missing a feature
 
 You can _request_ a new feature by [submitting an issue](#submitting-an-issue)
-to our GitHub Repository. If you would like to _implement_ a new feature,
-please consider the size of the change in order to determine the right steps
+to GitHub Repository of the Project. If you want to _implement_ a new feature,
+please consider the size of the change to decide the right steps
 to proceed:
 
 - For a **Major Feature**, first open an issue and outline your proposal so that
-  it can be discussed. This process allows us to better coordinate our efforts,
-  prevent duplication of work, and help you to craft the change so that it is
+  the project can discuss it. This process allows the Project to better coordinate Project efforts,
+  prevent duplication of work, and help you to craft the change so that it's
   successfully accepted into the project.
 
-  **Note**: Adding a new topic to the documentation, or significantly re-writing
-  a topic, counts as a major feature.
+  **Note**: adding a new topic to the documentation, or significantly re-writing
+  a topic, counts because a major feature.
 
-- **Small Features** can be crafted and directly [submitted as a Pull
+- **Small Features** can craft and directly [submitted because a Pull
   Request](#submitting-a-pull-request).
 
-## Submission Guidelines
+## Submission guidelines
 
-### Submitting an Issue
+### Submitting an issue
 
 Before you submit an issue, please search the issue tracker. An issue for your
 problem might already exist and the discussion might inform you of workarounds
-readily available.
+available.
 
-We want to fix all the issues as soon as possible, but before fixing a bug, we
-need to reproduce and confirm it. In order to reproduce bugs, we require that
-you provide a minimal reproduction. Having a minimal reproducible scenario
-gives us a wealth of important information without going back and forth to you
-with additional questions.
+The Project wants to fix all the issues immediately, but before fixing a bug.
+Project needs to reproduce and confirm it, to reproduce bugs. Project requires that
+you give a minimal reproduction. Having a minimal reproducible scenario
+gives to Project a wealth of important information without going back and forth to you
+with extra questions.
 
-A minimal reproduction allows us to quickly confirm a bug (or point out a coding
-problem) as well as confirm that we are fixing the right problem.
+A minimal reproduction allows the Project to immediately confirm a bug (or point out a coding
+problem) while confirm that the Project is fixing the right problem.
 
-We require a minimal reproduction to save maintainers' time and ultimately be
+Project requires a minimal reproduction to save maintainers' time and be
 able to fix more bugs. Often, developers find coding problems themselves while
-preparing a minimal reproduction. We understand that sometimes it might be hard
-to extract essential bits of code from a larger codebase, but we really need to
-isolate the problem before we can fix it.
+preparing a minimal reproduction. Project understands that sometimes it might be hard
+to extract essential bits of code from a larger codebase. The Project needs to
+isolate the problem before Project can fix it.
 
-Unfortunately, we are not able to investigate / fix bugs without a minimal
-reproduction, so if we don't hear back from you, we are going to close an issue
-that doesn't have enough info to be reproduced.
+Project isn't able to investigate and fix bugs without a minimal
+reproduction. So if the Project doesn't hear back from you, the Project is going to close an issue
+that doesn't have enough info to the Project reproduces it.
 
-You can file new issues by selecting from our [new issue
-templates](https://github.com/attilasomogyi/asterisk-configuration-files/issues/new/choose)
+You can file new issues by selecting from [new issue
+templates](https://github.com/attilasomogyi/asterisk-configuration-files/issues/new/choose) of The Project
 and filling out the issue template.
 
-### Submitting a Pull Request
+### Submitting a pull request
 
-Before you submit your Pull Request (PR) consider the following guidelines:
+Before you submit your Pull Request **PR** consider the following guidelines:
 
 1. Search [GitHub](https://github.com/attilasomogyi/attilasomogyi/pulls) for
    an open or closed PR that relates to your submission. You don't want to
@@ -86,12 +86,12 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 
 2. Be sure that an issue describes the problem you're fixing, or documents the
    design for the feature you'd like to add. Discussing the design upfront
-   helps to ensure that we're ready to accept your work.
+   helps to ensure that the Project is ready to accept your work.
 
 3. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-   the attilasomogyi/asterisk-configuration-files repo.
+   the attilasomogyi and asterisk-configuration-files repository.
 
-4. In your forked repository, make your changes in a new git branch:
+4. In your forked repository, make your changes in a new Git branch:
 
    ```shell
    git checkout -b my-fix-branch main
@@ -99,12 +99,12 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 
 5. Create your patch, **including appropriate test cases**.
 
-6. Follow our [Coding Rules](#coding-rules).
+6. Follow the [Coding Rules](#coding-rules) of Project.
 
-7. Run the full test suite, as described in the [developer
+7. Run the full test suite, because described in the [developer
    documentation][dev-doc], and ensure that all tests pass.
 
-8. Commit your changes using a descriptive commit message that follows our
+8. Commit your changes by using a descriptive commit message that follows the Project
    [commit message conventions](#commit-message-format). Adherence to these
    conventions is necessary because release notes are automatically generated
    from these messages.
@@ -113,7 +113,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
    git commit --all
    ```
 
-   Note: the optional commit `-a` command line option will automatically "add"
+   Note: the optional commit `-a` command line option going to automatically "add"
    and "rm" edited files.
 
 9. Push your branch to GitHub:
@@ -124,7 +124,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 
 10. In GitHub, send a pull request to `asterisk-configuration-files:main`.
 
-### Reviewing a Pull Request
+### Reviewing a pull request
 
 The Asterisk Configuration Files team reserves the right not to accept pull
 requests from community members who haven't been good citizens of the community.
@@ -134,13 +134,13 @@ managed channels.
 
 #### Addressing review feedback
 
-If we ask for changes via code reviews then:
+If the Project asks for changes on code reviews then:
 
 1. Make the required updates to the code.
 
 2. Re-run the test suites to ensure tests are still passing.
 
-3. Create a fixup commit and push to your GitHub repository (this will update
+3. Create a fixup commit and push to your GitHub repository (this going to update
    your Pull Request):
 
    ```shell
@@ -148,13 +148,13 @@ If we ask for changes via code reviews then:
    git push
    ```
 
-That's it! Thank you for your contribution!
+That's it. Thank you for your contribution.
 
 ##### Updating the commit message
 
 A reviewer might often suggest changes to a commit message (for example, to add
-more context for a change or adhere to our [commit message
-guidelines](#commit-message-format)). In order to update the commit
+more context for a change or adhere to [commit message
+guidelines](#commit-message-format) of the Project). To update the commit
 message of the last commit on your branch:
 
 1. Check out your branch:
@@ -163,7 +163,7 @@ message of the last commit on your branch:
    git checkout my-fix-branch
    ```
 
-2. Amend the last commit and modify the commit message:
+2. Change the last commit and change the commit message:
 
    ```shell
    git commit --amend
@@ -175,16 +175,22 @@ message of the last commit on your branch:
    git push --force-with-lease
    ```
 
+<!-- vale RedHat.CaseSensitiveTerms = NO -->
+
 > NOTE:
 > If you need to update the commit message of an earlier commit, you can use
 > `git rebase` in interactive mode.
 > See the [git docs](https://git-scm.com/docs/git-rebase#_interactive_mode) for
 > more details.
 
-#### After your pull request is merged
+<!-- vale RedHat.CaseSensitiveTerms = error -->
 
-After your pull request is merged, you can safely delete your branch and pull
-the changes from the main (upstream) repository:
+#### After the project have merged your pull request
+
+Vou can delete your branch and pull
+the changes from the main **upstream** repository:
+
+<!-- vale Custom.TermsSuggestions = NO -->
 
 - Delete the remote branch on GitHub either through the GitHub web UI or your
   local shell as follows:
@@ -211,40 +217,40 @@ the changes from the main (upstream) repository:
   git pull --ff upstream main
   ```
 
-## Coding Rules
+  <!-- vale Custom.TermsSuggestions = error -->
 
-To ensure consistency throughout the source code, keep these rules in mind as
-you are working:
+## Coding rules
 
-- All features or bug fixes **must be tested** by one or more specs (unit-tests).
-- All public API methods **must be documented**.
+To ensure consistency throughout the source code, keep these rules in mind as you are working:
 
-### We follow
+- One or more specs _unit-tests_ **must test** all features or bug fixes.
+- Documenting all public API methods **is a requirement**.
 
-- [JavaScript Style Guide][js-style-guide]
-- [Python Style Guide][py-style-guide]
-- [Java Style Guide][java-style-guide]
-- [Rust Style Guide][rust-style-guide]
-- [Shell Style Guide][shell-style-guide]
-- [HTML/CSS Style Guide][html-css-style-guide]
-- [SQL Style Guide][sql-style-guide]
+### Project follows
 
-## File and Directory name conventions
+- [JavaScript style guide][js-style-guide]
+- [Python style guide][py-style-guide]
+- [Java style guide][java-style-guide]
+- [Rust style guide][rust-style-guide]
+- [Shell Style guide][shell-style-guide]
+- [HTML and CSS style guide][html-css-style-guide]
+- [SQL style guide][sql-style-guide]
 
-- File name regexp check: `^[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z0-9]+$`
-- Directory name regexp check: `^[a-z0-9]+(?:-[a-z0-9]+)*$`
+## File and directory name conventions
+
+- File name regexp select: `^[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z0-9]+$`
+- Directory name regexp select: `^[a-z0-9]+(?:-[a-z0-9]+)*$`
 - Keep it as simple as possible
-- Don’t Capitalize Letters
-- Use Hyphens for Spaces
+- Don’t capitalize letters
+- Use hyphens for spaces
 - Separate words with hyphens
-- Avoid Special Characters
+- Avoid special characters
 
-## Commit Message Format
+## Commit message format
 
-_This specification is inspired by and supersedes the [AngularJS commit message
-format][commit-message-format]._
+_This specification draws inspiration from the [**Angular JS** commit message format][commit-message-format], and supersedes it._
 
-We have very precise rules over how our Git commit messages must be formatted.
+The Project enforces specific rules on how to format Git commit messages.
 This format leads to **easier to read commit history**.
 
 Each commit message consists of a **header**, a **body**, and a **footer**.
@@ -260,14 +266,14 @@ Each commit message consists of a **header**, a **body**, and a **footer**.
 The `header` is mandatory and must conform to the [Commit Message
 Header](#commit-message-header) format.
 
-The `body` is mandatory for all commits except for those of type "docs". When
+The `body` is mandatory for all commits except for those of type **docs**. When
 the body is present it must be at least 20 characters long and must conform to
-the [Commit Message Body](#commit-message-body) format.
+the [Commit message body](#commit-message-body) format.
 
-The `footer` is optional. The [Commit Message Footer](#commit-message-footer)
-format describes what the footer is used for and the structure it must have.
+The `footer` is optional. The [Commit message footer](#commit-message-footer) format
+explains the purpose of the footer and outlines its required structure.
 
-### Commit Message Header
+### Commit message header
 
 ```text
 <type>(<scope>): <short summary>
@@ -289,9 +295,9 @@ optional.
 Must be one of the following:
 
 - **build**: Changes that affect the build system or external dependencies
-  (example scopes: gulp, broccoli, npm)
-- **ci**: Changes to our CI configuration files and scripts (examples: CircleCi,
-  SauceLabs)
+  _example scopes: gulp, broccoli, npm_
+- **ci**: Changes to Project CI configuration files and scripts _examples: Circle Ci,
+  Sauce Labs_
 - **docs**: Documentation only changes
 - **feat**: A new feature
 - **fix**: A bug fix
@@ -306,34 +312,37 @@ person reading the changelog generated from commit messages).
 
 The following is the list of supported scopes:
 
-- file name without extension (for example: changelog, code-of-conduct, readme)
-- none/empty string: useful for `test` and `refactor` changes that are done
-  across all packages (e.g. `test: add missing unit tests`) and for docs changes
-  that are not related to a specific package (e.g. `docs: fix typo in tutorial`).
+<!-- vale off -->
+
+- filename without extension _for example: changelog, code-of-conduct, readme_
+- none or empty string: useful for `test` and `refactor` changes that are done
+across all packages (for example: `test: add missing unit tests`) and for docs changes
+that aren't related to a specific package (for example: `docs: fix typo in tutorial`).
+<!-- vale on -->
 
 ##### Summary
 
-Use the summary field to provide a succinct description of the change:
+Use the summary field to give a succinct description of the change:
 
-- use the imperative, present tense: "change" not "changed" nor "changes"
+- use the imperative, present tense: **change** not **changed** nor **changes**
 - don't capitalize the first letter
-- no dot (.) at the end
+- no dot **.** at the end
 
-#### Commit Message Body
+#### Commit message body
 
-Just as in the summary, use the imperative, present tense: "fix" not "fixed" nor
-"fixes".
+Just as in the summary, use the imperative, present tense: **fix** not **fixed** nor
+**fixes**
 
 Explain the motivation for the change in the commit message body. This commit
 message should explain _why_ you are making the change. You can include a
-comparison of the previous behavior with the new behavior in order to illustrate
+comparison of the earlier behavior with the new behavior to illustrate
 the impact of the change.
 
-#### Commit Message Footer
+#### Commit message footer
 
-The footer can contain information about breaking changes and deprecations and
+The footer can contain information about breaking changes and deprecations. It
 is also the place to reference GitHub issues, Jira tickets, and other PRs that
-this commit closes or is related to. For example:
+this commit closes or it's relate to. For example:
 
 ```text
 BREAKING CHANGE: <breaking change summary>
@@ -355,23 +364,23 @@ DEPRECATED: <what is deprecated>
 Closes #<pr number>
 ```
 
-Breaking Change section should start with the phrase "BREAKING CHANGE: "
-followed by a summary of the breaking change, a blank line, and a detailed
+Breaking Change section should start with the phrase **BREAKING CHANGE:**.
+It follow by a summary of the breaking change, a blank line, and a detailed
 description of the breaking change that also includes migration instructions.
 
-Similarly, a Deprecation section should start with "DEPRECATED: " followed by a
-short description of what is deprecated, a blank line, and a detailed
+Similarly, a Deprecation section should start with **DEPRECATED:**.
+It follow by a short description of what's deprecated, a blank line, and a detailed
 description of the deprecation that also mentions the recommended update path.
 
 ### Revert commits
 
-If the commit reverts a previous commit, it should begin with `revert:`,
+If the commit reverts a earlier commit, it should begin with `revert:`,
 followed by the header of the reverted commit.
 
 The content of the commit message body should contain:
 
-- information about the SHA of the commit being reverted in the following
-  format: `This reverts commit <SHA>`,
+- information about the Secure Hash Algorithm of the commit reverts in the following
+  format: `This reverts commit <Secure Hash Algorithm>`,
 - a clear description of the reason for reverting the commit message.
 
 [coc]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CODE_OF_CONDUCT.md
