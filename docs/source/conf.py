@@ -1,4 +1,4 @@
-project = 'Asterisk Configuration Files'
+project = 'Asterisk configuration files'
 copyright = '2023, Attila Zsolt Somogyi'
 author = 'Attila Zsolt Somogyi'
 release = 'latest'
@@ -21,10 +21,6 @@ extensions = [
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-html_theme_options = {
-    'display_version': True,
-    'show_sphinx': False,
-}
 
 html_theme = 'furo'
 html_static_path = ['_static']

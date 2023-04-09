@@ -19,7 +19,7 @@ load test_helper/static.bash
 }
 
 @test "shellcheck" {
-  run shellcheck_test
+  run bash -e scripts/shellcheck.sh
   print_errors
   [ "$status" -eq 0 ]
 }
@@ -49,7 +49,7 @@ load test_helper/static.bash
 }
 
 @test "v8r" {
-  run bash scripts/v8r.sh
+  run bash -e scripts/v8r.sh
   print_errors
   [ "$status" -eq 0 ]
 }
@@ -79,8 +79,11 @@ load test_helper/static.bash
 }
 
 @test "sphinx doctest and linkcheck" {
-  run sphinx_doctest_and_linkcheck
+  run bash -e scripts/sphinx-test.sh
   print_errors
   [ "$status" -eq 0 ]
 }
 
+teardown() {
+  make -C docs -b clean
+}
