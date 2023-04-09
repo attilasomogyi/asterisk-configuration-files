@@ -33,7 +33,8 @@
     "markdownlint-cli": "latest",
     "prettier": "latest",
     "prettier-plugin-sh": "latest",
-    "secretlint": "latest"
+    "secretlint": "latest",
+    "v8r": "latest"
   },
   "dependencies": {}
 }

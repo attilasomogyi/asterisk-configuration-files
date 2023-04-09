@@ -2,5 +2,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Asterisk Configuration Files questions on StackOverflow
-    url: https://stackoverflow.com/questions/tagged/asterisk-configuration-files
+    url: https://stackoverflow.com/questions/tagged/asterisk
     about: Please ask and answer questions here.

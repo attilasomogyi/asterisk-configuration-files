@@ -101,3 +101,5 @@
 ~yamllint
 ~yana
 ~zowe
+~secretlintrc
+~jsonlintrc

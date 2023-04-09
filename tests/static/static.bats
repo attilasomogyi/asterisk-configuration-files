@@ -48,6 +48,12 @@ load test_helper/static.bash
   [ "$status" -eq 0 ]
 }
 
+@test "v8r" {
+  run bash scripts/v8r.sh
+  print_errors
+  [ "$status" -eq 0 ]
+}
+
 @test "jscpd" {
   run yarn jscpd
   print_errors
