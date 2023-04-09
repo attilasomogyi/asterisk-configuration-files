@@ -1,0 +1,8 @@
+---
+cacheTtl: 86400
+verbose: 0
+customCatalog:
+  schemas:
+    - name: Github issue template config
+      fileMatch: [".github/ISSUE_TEMPLATE/config.yml"]
+      location: https://json.schemastore.org/github-issue-config.json
