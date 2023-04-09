@@ -15,6 +15,6 @@ function main() {
   fi
 }
 
-if [ "$(basename "$0")" != "bash" ]; then
+if [ "$0" == "${BASH_SOURCE[0]}" ]; then
   main
 fi
