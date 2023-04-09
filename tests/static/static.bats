@@ -79,7 +79,7 @@ load test_helper/static.bash
 }
 
 @test "sphinx doctest and linkcheck" {
-  run bash -e scripts/sphinx-test.sh
+  run bash -e scripts/sphinx_test.sh
   print_errors
   [ "$status" -eq 0 ]
 }
