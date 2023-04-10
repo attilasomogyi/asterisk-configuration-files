@@ -105,3 +105,6 @@
 ~jsonlintrc
 ~shfmt
 ~stylelint
+~tagname
+~specialchars
+~htmlhint
