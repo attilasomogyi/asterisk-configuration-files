@@ -24,6 +24,12 @@ load test_helper/static.bash
   [ "$status" -eq 0 ]
 }
 
+@test "shfmt" {
+  run bash -e scripts/shfmt.sh
+  print_errors
+  [ "$status" -eq 0 ]
+}
+
 @test "editorconfig-checker" {
   run editorconfig-checker
   print_errors
@@ -44,6 +50,12 @@ load test_helper/static.bash
 
 @test "yamllint" {
   run yamllint .
+  print_errors
+  [ "$status" -eq 0 ]
+}
+
+@test "stylelint" {
+  run bash -e scripts/stylelint.sh
   print_errors
   [ "$status" -eq 0 ]
 }
