@@ -1,0 +1,17 @@
+---
+profile: production
+
+exclude_paths:
+  - .cache/
+  - .github/
+
+parseable: true
+quiet: true
+strict: true
+verbosity: 1
+loop_var_prefix: "^(__|{role}_)"
+var_naming_pattern: "^[a-z_][a-z0-9_]*$"
+use_default_rules: true
+offline: true
+progressive: false
+skip_action_validation: false
