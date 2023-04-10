@@ -4,3 +4,4 @@ sphinx
 sphinx-copybutton
 sphinx-toolbox
 yamllint
+ansible-lint
