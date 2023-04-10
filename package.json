@@ -27,6 +27,7 @@
     "@secretlint/secretlint-rule-preset-recommend": "latest",
     "bats": "latest",
     "cspell": "latest",
+    "htmlhint": "^1.1.4",
     "husky": "latest",
     "is-ci": "latest",
     "jscpd": "latest",
