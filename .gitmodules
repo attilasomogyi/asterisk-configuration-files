@@ -1,6 +1,8 @@
 [submodule "scripts"]
 	path = scripts
 	url = git@github.com:attilasomogyi/scripts.git
+	branch = main
 [submodule "styles"]
 	path = styles
 	url = git@github.com:attilasomogyi/styles.git
+	branch = main
