@@ -10,3 +10,7 @@
 	path = .cspell
 	url = git@github.com:attilasomogyi/.cspell.git
 	branch = .
+[submodule "tests/static"]
+	path = tests/static
+	url = git@github.com:attilasomogyi/static.git
+	branch = .
