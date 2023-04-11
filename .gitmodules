@@ -14,3 +14,7 @@
 	path = tests/static
 	url = git@github.com:attilasomogyi/static.git
 	branch = .
+[submodule "docs/source/_templates"]
+	path = docs/source/_templates
+	url = git@github.com:attilasomogyi/_templates.git
+	branch = .
