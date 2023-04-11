@@ -84,7 +84,7 @@ opkg install \
 ## Usage
 
 ```shell
-git clone https://github.com/attilasomogyi/asterisk-configuration-files.git
+git clone --recurse-submodules https://github.com/attilasomogyi/asterisk-configuration-files.git
 sudo cp -r /etc/asterisk /etc/asterisk-backup-$(date --iso-8601=seconds)
 sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
 sudo systemctl restart asterisk

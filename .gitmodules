@@ -1,8 +1,12 @@
 [submodule "scripts"]
 	path = scripts
 	url = git@github.com:attilasomogyi/scripts.git
-	branch = main
+	branch = .
 [submodule "styles"]
 	path = styles
 	url = git@github.com:attilasomogyi/styles.git
-	branch = main
+	branch = .
+[submodule ".cspell"]
+	path = .cspell
+	url = git@github.com:attilasomogyi/.cspell.git
+	branch = .
