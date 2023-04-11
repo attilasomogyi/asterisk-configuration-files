@@ -3,5 +3,5 @@ node_modules
 .cspell/cache/cspell-cache
 report
 styles/*
-!styles/Custom
+!styles/custom
 yarn-error.log
