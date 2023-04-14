@@ -31,6 +31,7 @@
     "husky": "latest",
     "is-ci": "latest",
     "jscpd": "latest",
+    "lint-staged": "latest",
     "markdownlint-cli": "latest",
     "prettier": "latest",
     "prettier-plugin-sh": "latest",
