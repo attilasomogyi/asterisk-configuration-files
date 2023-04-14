@@ -1,0 +1,4 @@
+{
+  "*.html": "yarn htmlhint",
+  "*.sh": "shellcheck"
+}
