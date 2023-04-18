@@ -4,8 +4,8 @@
 
 | Version | Supported |
 | ------- | --------- |
-| latest  | ✔️        |
-| <latest | ❌        |
+| latest  | yes       |
+| <latest | no        |
 
 ## Reporting a vulnerability
 
