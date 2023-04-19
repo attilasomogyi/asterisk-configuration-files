@@ -113,7 +113,7 @@ Before you submit your Pull Request **PR** consider the following guidelines:
    git commit --all
    ```
 
-   Note: the optional commit `-a` command line option going to automatically "add"
+   Note: the optional commit `-a` command line option is going to automatically "add"
    and "rm" edited files.
 
 9. Push your branch to GitHub:
@@ -140,7 +140,7 @@ If the Project asks for changes on code reviews then:
 
 2. Re-run the test suites to ensure tests are still passing.
 
-3. Create a fixup commit and push to your GitHub repository (this going to update
+3. Create a fixup commit and push to your GitHub repository (this is going to update
    your Pull Request):
 
    ```shell

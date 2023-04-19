@@ -17,22 +17,22 @@
   "dictionaryDefinitions": [
     {
       "name": "custom-asterisk",
-      "path": "./.cspell/custom-asterisk.txt",
+      "path": "./.cspell/src/custom-asterisk.txt",
       "addWords": true
     },
     {
       "name": "custom-linux-distributions",
-      "path": "./.cspell/custom-linux-distributions.txt",
+      "path": "./.cspell/src/custom-linux-distributions.txt",
       "addWords": true
     },
     {
       "name": "custom-sphinx",
-      "path": "./.cspell/custom-sphinx.txt",
+      "path": "./.cspell/src/custom-sphinx.txt",
       "addWords": true
     },
     {
       "name": "custom-usernames",
-      "path": "./.cspell/custom-usernames.txt",
+      "path": "./.cspell/src/custom-usernames.txt",
       "addWords": true
     }
   ]

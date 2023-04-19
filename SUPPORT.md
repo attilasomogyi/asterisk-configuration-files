@@ -20,7 +20,7 @@ Stack Overflow is a much better place to ask questions since:
 - Stack Overflow's voting system assures that the best answers are prominently
   visible.
 
-To save your and this project time, The project going to systematically close all issues that are
+To save your and this project time, The project is going to systematically close all issues that are
 requests for general support and redirect people to Stack Overflow.
 
 _Thank you for your cooperation._

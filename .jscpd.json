@@ -1,6 +1,6 @@
 {
   "threshold": 0,
   "reporters": ["console"],
-  "ignore": ["**/page.html"],
+  "ignore": ["**/page.html", "**/.cspell"],
   "gitignore": true
 }
