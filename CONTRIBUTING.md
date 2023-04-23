@@ -190,7 +190,7 @@ message of the last commit on your branch:
 Vou can delete your branch and pull
 the changes from the main **upstream** repository:
 
-<!-- vale Custom.TermsSuggestions = NO -->
+<!-- vale custom.terms-suggestions = NO -->
 
 - Delete the remote branch on GitHub either through the GitHub web UI or your
   local shell as follows:
@@ -217,7 +217,7 @@ the changes from the main **upstream** repository:
   git pull --ff upstream main
   ```
 
-  <!-- vale Custom.TermsSuggestions = error -->
+  <!-- vale custom.term-suggestions = error -->
 
 ## Coding rules
 
@@ -240,7 +240,7 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 
 - File name regexp select: `^[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z0-9]+$`
 - Directory name regexp select: `^[a-z0-9]+(?:-[a-z0-9]+)*$`
-- Keep it as simple as possible
+- Keep it simple
 - Don’t capitalize letters
 - Use hyphens for spaces
 - Separate words with hyphens
@@ -266,7 +266,7 @@ Each commit message consists of a **header**, a **body**, and a **footer**.
 The `header` is mandatory and must conform to the [Commit Message
 Header](#commit-message-header) format.
 
-The `body` is mandatory for all commits except for those of type **docs**. When
+The `body` is mandatory for all commits except for those of classification **docs**. When
 the body is present it must be at least 20 characters long and must conform to
 the [Commit message body](#commit-message-body) format.
 
@@ -307,7 +307,7 @@ Must be one of the following:
 
 ##### Scope
 
-The scope should be the name of the npm package affected (as perceived by the
+The scope should be the name of the npm package affected (like perceived by the
 person reading the changelog generated from commit messages).
 
 The following is the list of supported scopes:
@@ -330,7 +330,7 @@ Use the summary field to give a succinct description of the change:
 
 #### Commit message body
 
-Just as in the summary, use the imperative, present tense: **fix** not **fixed** nor
+Just like in the summary, use the imperative, present tense: **fix** not **fixed** nor
 **fixes**
 
 Explain the motivation for the change in the commit message body. This commit
