@@ -1,7 +1,7 @@
 # Asterisk configuration files
 
-Asterisk Configuration Files offer a method to configure the settings and behavior of the Asterisk Private Branch Exchange system.
-These files are typically in a .conf format and include settings for Session Initiation Protocol and extensions, among others.
+> Asterisk Configuration Files offer a method to configure the settings and behavior of the Asterisk Private Branch Exchange system.
+> These files are typically in a .conf format and include settings for Session Initiation Protocol and extensions, among others.
 
 <p align="left">
   <img
@@ -46,21 +46,25 @@ These files are typically in a .conf format and include settings for Session Ini
   />
 </p>
 
-## Installation
+## Features
 
-### AlmaLinux
+## Getting started
+
+### Installation
+
+#### AlmaLinux
 
 ```shell
 sudo dnf install asterisk
 ```
 
-### Arch Linux
+#### Arch Linux
 
 ```shell
 sudo pacman --sync --refresh --sysupgrade asterisk
 ```
 
-### Debian and Ubuntu Linux
+#### Debian and Ubuntu Linux
 
 ```shell
 sudo apt update
@@ -68,7 +72,7 @@ sudo apt upgrade
 sudo apt install asterisk
 ```
 
-### OpenWrt
+#### OpenWrt
 
 ```shell
 opkg update
@@ -81,7 +85,7 @@ opkg install \
   asterisk-res-rtp-asterisk
 ```
 
-## Usage
+### Usage
 
 ```shell
 git clone --recurse-submodules https://github.com/attilasomogyi/asterisk-configuration-files.git
@@ -90,7 +94,9 @@ sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
 sudo systemctl restart asterisk
 ```
 
-### [Documentation](https://attilasomogyi.github.io/asterisk-configuration-files)
+## [Documentation](https://attilasomogyi.github.io/asterisk-configuration-files)
+
+## [Support](https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/SUPPORT.md)
 
 ## [Contributing](https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CONTRIBUTING.md)
 
