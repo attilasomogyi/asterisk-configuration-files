@@ -19,7 +19,7 @@ What kind of change does this pull request introduce?
 - [ ] Build related changes
 - [ ] CI related changes
 - [ ] Documentation content changes
-- [ ] Asterisk Configuration Files / infrastructure changes
+- [ ] Source code / infrastructure changes
 - [ ] Other, Please describe:
 
 ## The current behavior

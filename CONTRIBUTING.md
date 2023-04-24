@@ -1,6 +1,6 @@
-# Contributing to asterisk configuration files
+# Contributing
 
-This Project would love for you to contribute to Asterisk Configuration Files and help
+This Project would love for you to contribute and help
 make it even better than it's today. As a contributor, here are the guidelines
 Project wants you to follow:
 
@@ -14,7 +14,7 @@ Project wants you to follow:
 
 ## Code of conduct
 
-Help the Project keep Asterisk Configuration Files open and inclusive.
+Help the Project keep it open and inclusive.
 Please read and follow [Code of conduct][coc] of the Project.
 
 ## Question or problem
@@ -89,7 +89,7 @@ Before you submit your Pull Request **PR** consider the following guidelines:
    helps to ensure that the Project is ready to accept your work.
 
 3. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-   the attilasomogyi and asterisk-configuration-files repository.
+   the attilasomogyi and repository name.
 
 4. In your forked repository, make your changes in a new Git branch:
 
@@ -122,14 +122,14 @@ Before you submit your Pull Request **PR** consider the following guidelines:
    git push origin my-fix-branch
    ```
 
-10. In GitHub, send a pull request to `asterisk-configuration-files:main`.
+10. In GitHub, send a pull request to `repository_name:main`.
 
 ### Reviewing a pull request
 
-The Asterisk Configuration Files team reserves the right not to accept pull
+The Project team reserves the right not to accept pull
 requests from community members who haven't been good citizens of the community.
-Such behavior includes not following the [Asterisk Configuration Files code of
-conduct][coc] and applies within or outside of Asterisk Configuration Files
+Such behavior includes not following the [Project code of
+conduct][coc] and applies within or outside of Project
 managed channels.
 
 #### Addressing review feedback

@@ -10,7 +10,7 @@ body:
   - type: dropdown
     id: affected-packages
     attributes:
-      label: Which @asterisk-configuration-files/* package(s) are relevant/related to the feature request?
+      label: Which @source code/* package(s) are relevant/related to the feature request?
       options:
         - animations
         - bazel
