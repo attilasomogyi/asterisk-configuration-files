@@ -6,3 +6,4 @@ styles/*
 !styles/custom
 yarn-error.log
 .cspell/styles
+yarn.lock
