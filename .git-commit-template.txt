@@ -1,7 +1,8 @@
 # Summarization of the change
 
-# Cause of the change.
+
+# Cause of the change
 why:
 
-# How is the change.
+# How does it change?
 how:
