@@ -402,14 +402,14 @@
   dependencies:
     eventemitter3 "^4.0.4"
 
-"@jscpd/finder@^3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@jscpd/finder/-/finder-3.5.4.tgz#76ef84eb86790968d178b1643414ca503769a40e"
-  integrity sha512-GLdM8Y/BVVpCbz4kHjYidGZFNwL1vunTh3kmKoiuQbfEkhFU0VHM3ErDekSn210gs9xEqig0KAp12rH83IjYBg==
+"@jscpd/finder@^3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@jscpd/finder/-/finder-3.5.5.tgz#d46211c762ed62c72428914313f528a3cd550f41"
+  integrity sha512-RAaSnqZWe66JnYsUABvXBPfS9Z8U4GmLLa/IQkxZIOWxlt7g4ohs3FxJNv61bQdBbD0NQ6Xxvd4jntac8FKftg==
   dependencies:
     "@jscpd/core" "^3.5.4"
     "@jscpd/tokenizer" "^3.5.4"
-    blamer "^1.0.1"
+    blamer "^1.0.3"
     bytes "^3.1.0"
     cli-table3 "^0.6.0"
     colors "1.4.0"
@@ -873,14 +873,13 @@ binaryextensions@^4.18.0:
   resolved "https://registry.yarnpkg.com/binaryextensions/-/binaryextensions-4.18.0.tgz#22aeada2d14de062c60e8ca59a504a5636a76ceb"
   integrity sha512-PQu3Kyv9dM4FnwB7XGj1+HucW+ShvJzJqjuw1JkKVs1mWdwOKVcRjOi+pV9X52A0tNvrPCsPkbFFQb+wE1EAXw==
 
-blamer@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/blamer/-/blamer-1.0.1.tgz#0453b2e94764fb71d2a913c198fff0335fe875aa"
-  integrity sha512-o6d0m9rcEEQXF3+L/wnFPxngqwc1Oxkr/WJ3IdpTfTb0HxOpRLkhC7RAfEEkHIzU66YFjG7N5oEstvE72cnQNQ==
+blamer@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/blamer/-/blamer-1.0.3.tgz#a130c1d82028167eba0250b3d01d066d1b7f2621"
+  integrity sha512-JalDFXndGCrTkKakC7C0H5I09ognGQrl3xJZ6wPwtiuX+9h/qcH1PbTnW+MD6mJku1ISmOAwzeWaXT79D3kg3g==
   dependencies:
     execa "^4.0.0"
     which "^2.0.2"
-    xml2js "^0.4.23"
 
 boundary@^1.0.1:
   version "1.0.1"
@@ -2073,12 +2072,12 @@ js-yaml@^4.0.0, js-yaml@^4.1.0:
     argparse "^2.0.1"
 
 jscpd@latest:
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/jscpd/-/jscpd-3.5.4.tgz#08ae8a810be97b3588b9bcf4bb17d8ab50d15714"
-  integrity sha512-h1qXUniAYoig7YBgwy/rVFXTsQiemU3Yox6n4xu5qE4T9+VVVuWzlHULHIaq+hnXUEMyTu5XVUOLssv2zwhrWg==
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/jscpd/-/jscpd-3.5.5.tgz#31467d8f922734590c79e37faa0eb6a9e3fbbf4e"
+  integrity sha512-mb2xpAb+OaHBLMyb2akEwbDN0yaOdbQIjnT0ht3RNZHp6p2CVUmO1P3+f98ZgD7pzmBcajkkSVe+i39ZhFCCbQ==
   dependencies:
     "@jscpd/core" "^3.5.4"
-    "@jscpd/finder" "^3.5.4"
+    "@jscpd/finder" "^3.5.5"
     "@jscpd/html-reporter" "^3.5.4"
     "@jscpd/tokenizer" "^3.5.4"
     colors "1.4.0"
@@ -3027,11 +3026,6 @@ rxjs@^7.8.0:
   dependencies:
     tslib "^2.1.0"
 
-sax@>=0.6.0:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
-  integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-
 secretlint@latest:
   version "6.2.3"
   resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-6.2.3.tgz#6298a47e53cfc521301298a4de160622f58388b3"
@@ -3621,23 +3615,10 @@ xdg-basedir@^4.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
 
-xml2js@^0.4.23:
-  version "0.4.23"
-  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
-  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
-  dependencies:
-    sax ">=0.6.0"
-    xmlbuilder "~11.0.0"
-
 xml@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
   integrity sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==
-
-xmlbuilder@~11.0.0:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
-  integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
 
 y18n@^5.0.5:
   version "5.0.8"
