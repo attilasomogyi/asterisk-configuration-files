@@ -6,21 +6,25 @@ updates:
     schedule:
       interval: "daily"
       timezone: "Europe/Budapest"
+      time: "00:00"
 
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
       interval: "daily"
       timezone: "Europe/Budapest"
+      time: "00:00"
 
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
       timezone: "Europe/Budapest"
+      time: "00:00"
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
       timezone: "Europe/Budapest"
+      time: "00:00"
