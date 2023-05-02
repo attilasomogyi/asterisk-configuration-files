@@ -18,3 +18,6 @@
 	path = docs/source/_templates
 	url = git@github.com:attilasomogyi/_templates.git
 	branch = main
+[submodule "docs/templates"]
+	path = docs/templates
+	url = git@github.com:attilasomogyi/templates.git
