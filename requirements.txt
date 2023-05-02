@@ -1,7 +1,8 @@
+ansible-lint
 furo
+jinja2-cli
 rstcheck
 sphinx
 sphinx-copybutton
 sphinx-toolbox
 yamllint
-ansible-lint

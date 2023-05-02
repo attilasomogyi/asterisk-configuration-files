@@ -1,6 +1,6 @@
 # Contributing
 
-This Project would like for you to contribute and help
+This Project prefer for you to contribute and help
 make it even better than it's today. As a contributor, here are the guidelines
 Project wants you to follow:
 
