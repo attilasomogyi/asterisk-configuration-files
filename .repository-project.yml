@@ -1,0 +1,59 @@
+---
+project:
+  name: Asterisk configuration files
+  author: Attila Zsolt Somogyi
+  repository:
+    name: asterisk-configuration-files
+    owner: attilasomogyi
+
+  description: >-
+    Asterisk Configuration Files offer
+    a method to configure the settings
+    and behavior of the Asterisk Private Branch Exchange system.
+    These files are typically in a .conf format
+    and include settings for Session Initiation Protocol and extensions, among others.
+
+  documentation:
+    enabled: true
+  support:
+    enabled: true
+  security:
+    enabled: true
+  contributing:
+    enabled: true
+
+  features: ""
+
+  installation:
+    - platform: AlmaLinux
+      steps:
+        - sudo dnf install asterisk
+
+    - platform: Arch Linux
+      steps:
+        - sudo pacman --sync --refresh --sysupgrade asterisk
+
+    - platform: Debian and Ubuntu Linux
+      steps:
+        - sudo apt update
+        - sudo apt upgrade
+        - sudo apt install asterisk
+    - platform: OpenWrt
+      steps:
+        - opkg update
+        - opkg install \
+        - '     asterisk \'
+        - '     asterisk-pjsip \'
+        - '     asterisk-bridge-simple \'
+        - '     asterisk-codec-alaw \'
+        - '     asterisk-codec-ulaw \'
+        - "     asterisk-res-rtp-asterisk"
+
+  usage:
+    steps:
+      - git clone --recurse-submodules https://github.com/attilasomogyi/asterisk-configuration-files.git
+      - sudo cp -r /etc/asterisk /etc/asterisk-backup-$(date --iso-8601=seconds)
+      - sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
+      - sudo systemctl restart asterisk
+
+  examples: ""

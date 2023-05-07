@@ -1,52 +1,29 @@
 # Asterisk configuration files
 
-> Asterisk Configuration Files offer a method to configure the settings and behavior of the Asterisk Private Branch Exchange system.
-> These files are typically in a .conf format and include settings for Session Initiation Protocol and extensions, among others.
-
 <p align="left">
   <img
     src="https://img.shields.io/github/v/release/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub release latest SemVer"
+    alt="latest release"
   />
   <img
     src="https://img.shields.io/github/release-date/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub Release Date"
+    alt="release date"
   />
   <img
     src="https://img.shields.io/github/languages/top/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub top language"
-  />
-  <img
-    src="https://img.shields.io/gitlab/coverage/attilasomogyi/asterisk-configuration-files/main"
-    alt="Gitlab code coverage"
-  />
-  <img
-    src="https://img.shields.io/github/languages/code-size/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub code size in bytes"
-  />
-  <img
-    src="https://img.shields.io/github/repo-size/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub repository size"
-  />
-  <img
-    src="https://img.shields.io/github/downloads/attilasomogyi/asterisk-configuration-files/total"
-    alt="GitHub all releases"
-  />
-  <img
-    src="https://img.shields.io/github/downloads/attilasomogyi/asterisk-configuration-files/latest/total"
-    alt="GitHub release latest by SemVer"
+    alt="top languages in the project"
   />
   <img
     src="https://img.shields.io/github/commit-activity/y/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub commit activity"
+    alt="commit activity"
   />
   <img
     src="https://img.shields.io/github/contributors/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub contributors"
+    alt="contributors"
   />
 </p>
 
-## Features
+Asterisk Configuration Files offer a method to configure the settings and behavior of the Asterisk Private Branch Exchange system. These files are typically in a .conf format and include settings for Session Initiation Protocol and extensions, among others.
 
 ## Getting started
 
@@ -77,12 +54,12 @@ sudo apt install asterisk
 ```shell
 opkg update
 opkg install \
-  asterisk \
-  asterisk-pjsip \
-  asterisk-bridge-simple \
-  asterisk-codec-alaw \
-  asterisk-codec-ulaw \
-  asterisk-res-rtp-asterisk
+     asterisk \
+     asterisk-pjsip \
+     asterisk-bridge-simple \
+     asterisk-codec-alaw \
+     asterisk-codec-ulaw \
+     asterisk-res-rtp-asterisk
 ```
 
 ### Usage
@@ -94,34 +71,38 @@ sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
 sudo systemctl restart asterisk
 ```
 
-## [Documentation](https://attilasomogyi.github.io/asterisk-configuration-files)
+## Documentation
 
-## [Support](https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/SUPPORT.md)
+Read the [documentation][documentation].
 
-## [Contributing](https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CONTRIBUTING.md)
+## Support
+
+Read the [support][support].
+
+## Security
+
+Read the [security][security].
+
+## Contributing
+
+Read the [contributing][contributing] guidelines.
+
+### Contributors
 
 <a href="https://github.com/attilasomogyi/asterisk-configuration-files/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=attilasomogyi/asterisk-configuration-files" />
+  <img src="https://contrib.rocks/image?repo=attilasomogyi/asterisk-configuration-files"
+    alt="list of the contributors" />
 </a>
 
-## [License](https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/LICENSE)
+## License
 
-<p>
-  <img
-    src="https://img.shields.io/github/license/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub"
-  />
-<p/>
+Read the [license][license].
 
-## Project status
+<img src="https://img.shields.io/github/license/attilasomogyi/asterisk-configuration-files"
+  alt="license" />
 
-<p>
-  <img
-    src="https://img.shields.io/github/commit-activity/y/attilasomogyi/asterisk-configuration-files"
-    alt="GitHub commit activity"
-  />
-  <img
-      src="https://img.shields.io/github/last-commit/attilasomogyi/asterisk-configuration-files"
-      alt="GitHub last commit"
-  />
-</p>
+[documentation]: https://attilasomogyi.github.io/asterisk-configuration-files/
+[support]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/SUPPORT.md
+[security]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/SECURITY.md
+[contributing]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/CONTRIBUTING.md
+[license]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/LICENSE
