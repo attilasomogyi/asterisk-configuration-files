@@ -9,4 +9,4 @@
 
 ## Reporting a vulnerability
 
-Please, reporting a vulnerabilities to project's contributors.
+Please, reporting vulnerabilities to project's contributors.
