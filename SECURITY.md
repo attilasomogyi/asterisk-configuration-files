@@ -9,4 +9,6 @@
 
 ## Reporting a vulnerability
 
-Please, reporting vulnerabilities to project's contributors.
+Please, [report vulnerabilities][report-vulnerability] to repository maintainer.
+
+[report-vulnerability]: https://github.com/attilasomogyi/asterisk-configuration-files/security/advisories/
