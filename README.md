@@ -49,6 +49,7 @@ sudo pacman --sync \
 ```shell
 sudo apt update
 sudo apt upgrade
+
 sudo apt install asterisk
 ```
 
@@ -56,6 +57,7 @@ sudo apt install asterisk
 
 ```shell
 opkg update
+
 opkg install \
      asterisk \
      asterisk-pjsip \
@@ -70,10 +72,13 @@ opkg install \
 ```shell
 git clone --recurse-submodules \
 https://github.com/attilasomogyi/asterisk-configuration-files.git
+
 sudo cp -r /etc/asterisk \
            /etc/asterisk-backup-$(date --iso-8601=seconds)
+
 sudo cp asterisk-configuration-files/src/*.conf \
         /etc/asterisk
+
 sudo systemctl restart asterisk
 ```
 
