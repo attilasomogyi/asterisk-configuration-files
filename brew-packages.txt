@@ -1,3 +1,4 @@
 trivy
 vale
 yq
+languagetool

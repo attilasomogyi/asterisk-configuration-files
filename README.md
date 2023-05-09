@@ -38,7 +38,10 @@ sudo dnf install asterisk
 #### Arch Linux
 
 ```shell
-sudo pacman --sync --refresh --sysupgrade asterisk
+sudo pacman --sync \
+            --refresh \
+            --sysupgrade \
+            asterisk
 ```
 
 #### Debian and Ubuntu Linux
@@ -65,9 +68,12 @@ opkg install \
 ### Usage
 
 ```shell
-git clone --recurse-submodules https://github.com/attilasomogyi/asterisk-configuration-files.git
-sudo cp -r /etc/asterisk /etc/asterisk-backup-$(date --iso-8601=seconds)
-sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
+git clone --recurse-submodules \
+https://github.com/attilasomogyi/asterisk-configuration-files.git
+sudo cp -r /etc/asterisk \
+           /etc/asterisk-backup-$(date --iso-8601=seconds)
+sudo cp asterisk-configuration-files/src/*.conf \
+        /etc/asterisk
 sudo systemctl restart asterisk
 ```
 
@@ -100,6 +106,19 @@ Read the [license][license].
 
 <img src="https://img.shields.io/github/license/attilasomogyi/asterisk-configuration-files"
   alt="license" />
+
+## Project status
+
+<p>
+  <img
+    src="https://img.shields.io/github/commit-activity/y/attilasomogyi/asterisk-configuration-files"
+    alt="commit activity"
+  />
+  <img
+      src="https://img.shields.io/github/last-commit/attilasomogyi/asterisk-configuration-files"
+      alt="last commit"
+  />
+</p>
 
 [documentation]: https://attilasomogyi.github.io/asterisk-configuration-files/
 [support]: https://github.com/attilasomogyi/asterisk-configuration-files/blob/main/SUPPORT.md

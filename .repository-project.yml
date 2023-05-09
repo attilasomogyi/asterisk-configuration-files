@@ -31,7 +31,10 @@ project:
 
     - platform: Arch Linux
       steps:
-        - sudo pacman --sync --refresh --sysupgrade asterisk
+        - sudo pacman --sync \
+        - '            --refresh \'
+        - '            --sysupgrade \'
+        - "            asterisk"
 
     - platform: Debian and Ubuntu Linux
       steps:
@@ -51,9 +54,12 @@ project:
 
   usage:
     steps:
-      - git clone --recurse-submodules https://github.com/attilasomogyi/asterisk-configuration-files.git
-      - sudo cp -r /etc/asterisk /etc/asterisk-backup-$(date --iso-8601=seconds)
-      - sudo cp asterisk-configuration-files/src/*.conf /etc/asterisk
+      - git clone --recurse-submodules \
+      - https://github.com/attilasomogyi/asterisk-configuration-files.git
+      - sudo cp -r /etc/asterisk \
+      - "           /etc/asterisk-backup-$(date --iso-8601=seconds)"
+      - sudo cp asterisk-configuration-files/src/*.conf \
+      - "        /etc/asterisk"
       - sudo systemctl restart asterisk
 
   examples: ""
