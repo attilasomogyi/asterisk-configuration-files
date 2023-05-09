@@ -40,10 +40,12 @@ project:
       steps:
         - sudo apt update
         - sudo apt upgrade
+        - ""
         - sudo apt install asterisk
     - platform: OpenWrt
       steps:
         - opkg update
+        - ""
         - opkg install \
         - '     asterisk \'
         - '     asterisk-pjsip \'
@@ -56,10 +58,13 @@ project:
     steps:
       - git clone --recurse-submodules \
       - https://github.com/attilasomogyi/asterisk-configuration-files.git
+      - ""
       - sudo cp -r /etc/asterisk \
       - "           /etc/asterisk-backup-$(date --iso-8601=seconds)"
+      - ""
       - sudo cp asterisk-configuration-files/src/*.conf \
       - "        /etc/asterisk"
+      - ""
       - sudo systemctl restart asterisk
 
   examples: ""
