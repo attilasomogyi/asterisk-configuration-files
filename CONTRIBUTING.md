@@ -356,7 +356,7 @@ Fork and clone the repository:
 3. Clone your fork of the *asterisk-configuration-files* repository and define an `upstream` remote pointing back to the *asterisk-configuration-files* repository that you forked in the first place.
 
 ```shell
-git clone \
+git clone --recurse-submodules \
 git@github.com:<github username>/asterisk-configuration-files.git
 
 cd asterisk-configuration-files
