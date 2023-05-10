@@ -2,7 +2,7 @@
 
 ## General questions
 
-- Avoid open issues for general support questions
+- Avoid open issues for general support questions.
 - Use [Stack Overflow][stack-overflow] to ask support-related questions.
 
 The project is going to systematically close all issues that are
