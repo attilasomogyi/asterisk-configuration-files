@@ -1579,15 +1579,7 @@ find-up@^6.3.0:
     locate-path "^7.1.0"
     path-exists "^5.0.0"
 
-flat-cache@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-3.0.4.tgz#61b0338302b2fe9f957dcc32fc2a87f1c3048b11"
-  integrity sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg==
-  dependencies:
-    flatted "^3.1.0"
-    rimraf "^3.0.2"
-
-flat-cache@^3.1.1:
+flat-cache@^3.0.4, flat-cache@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-3.1.1.tgz#a02a15fdec25a8f844ff7cc658f03dd99eb4609b"
   integrity sha512-/qM2b3LUIaIgviBQovTLvijfyOQXPtSRnRK26ksj2J7rzPIecePUIpJsZ4T02Qg+xiAEKIs5K8dsHEd+VaKa/Q==
@@ -1595,11 +1587,6 @@ flat-cache@^3.1.1:
     flatted "^3.2.9"
     keyv "^4.5.3"
     rimraf "^3.0.2"
-
-flatted@^3.1.0:
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
-  integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
 flatted@^3.2.9:
   version "3.2.9"
@@ -1766,10 +1753,10 @@ globjoin@^0.1.4:
   resolved "https://registry.yarnpkg.com/globjoin/-/globjoin-0.1.4.tgz#2f4494ac8919e3767c5cbb691e9f463324285d43"
   integrity sha512-xYfnw62CKG8nLkZBfWbhWwDw02CHty86jfPcc2cr3ZfeuK9ysoVPPEUxf21bAD/rWAgk52SuBrLJlefNy8mvFg==
 
-got@^12.0.1:
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/got/-/got-12.6.0.tgz#8d382ee5de4432c086e83c133efdd474484f6ac7"
-  integrity sha512-WTcaQ963xV97MN3x0/CbAriXFZcXCfgxVp91I+Ze6pawQOa7SgzwSx2zIJJsX+kTajMnVs0xcFD1TxZKFqhdnQ==
+got@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/got/-/got-13.0.0.tgz#a2402862cef27a5d0d1b07c0fb25d12b58175422"
+  integrity sha512-XfBk1CxOOScDcMr9O1yKkNaQyy865NbYs+F7dr4H0LZMVgCj2Le59k6PqbNHoL5ToeaEQUYh6c6yMfVcc6SJxA==
   dependencies:
     "@sindresorhus/is" "^5.2.0"
     "@szmarczak/http-timer" "^5.0.1"
@@ -3531,9 +3518,9 @@ util-deprecate@^1.0.2:
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
 v8r@latest:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/v8r/-/v8r-2.0.0.tgz#81be3bcbe6a89ea5b5b5553034248c0c8ccdad1f"
-  integrity sha512-Yy7MfBMEiWVzGgjJKDycxcCoXoDCqnCndz5xH0AG9WB70hDUeLxMukIdNcZAH8CnNYZM4LaimusIt1MJ0Slb3A==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/v8r/-/v8r-2.1.0.tgz#036979fd5b81cda9ff8b0557c9ae0203d7646cd8"
+  integrity sha512-wD4oSZTa8V4HVAf8UJM1FHngjVOYTUNq1jKH5JyhswJtNxRICbIZNWkvpLMvXz2nmeuQns0TnXF3pPdsITX+ag==
   dependencies:
     ajv "^8.8.2"
     ajv-draft-04 "^1.0.0"
@@ -3543,7 +3530,7 @@ v8r@latest:
     decamelize "^6.0.0"
     flat-cache "^3.0.4"
     glob "^10.1.0"
-    got "^12.0.1"
+    got "^13.0.0"
     is-url "^1.2.4"
     js-yaml "^4.0.0"
     json5 "^2.2.0"
