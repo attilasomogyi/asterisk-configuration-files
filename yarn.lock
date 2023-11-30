@@ -595,9 +595,9 @@
   integrity sha512-Moshp9CcFDGiDRibuEE/l3DwLH6Hc778AnVsFx0iRMz3sCkw65W64QMmRJloGln+Vb03jwYcerEdK+WfIw1a7Q==
 
 "@secretlint/secretlint-rule-preset-recommend@latest":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-7.2.0.tgz#45116ff8dfd9ae11a2e77d80ce3d8e391b287307"
-  integrity sha512-wEtTqV66j7rMuALKIIA6jWQc+GsjA6L998uCsUk6ma560u4E+HciKXt127UF6LJG+XdrgRx3Xfxg7mMYsVQ28w==
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-8.0.0.tgz#5350c2807687796210e971c629b0f6fe24bb6b49"
+  integrity sha512-V80PUPaUv+oDi00w+ZEE6YmxdNHoM0/CRWaAG/cC/wO7RIYMlHoZqsacMt3GEuzkOfAGnNENnOzDYsq08Z6u3Q==
 
 "@secretlint/source-creator@^8.0.0":
   version "8.0.0"
