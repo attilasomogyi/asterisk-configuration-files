@@ -28,7 +28,7 @@ jobs:
         run: yarn global add cspell
 
       - name: Spell Check Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ./.cspell/cache/cspell-cache
           key: ${{ runner.os }}-cspell-${{ hashFiles('**/.cspell.json') }}
