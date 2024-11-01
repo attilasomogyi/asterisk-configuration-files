@@ -23,7 +23,10 @@ jobs:
         with:
           node-version: latest
           cache: yarn
-
+      
+      - name: Initialize yarn lock file
+        run: yarn install
+      
       - name: Install cspell
         run: yarn global add cspell
 
