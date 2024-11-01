@@ -388,7 +388,7 @@ yarn test
 [js-style-guide]: https://google.github.io/styleguide/jsguide.html
 [new-issue-templates]:https://github.com/attilasomogyi/asterisk-configuration-files/issues/new/choose
 [nodejs]: https://nodejs.org/
-[pull-request]: https://github.com/attilasomogyi/attilasomogyi/pulls
+[pull-requests]: https://github.com/attilasomogyi/asterisk-configuration-files/pulls
 [py-style-guide]: https://peps.python.org/pep-0008/
 [python]: https://www.python.org/
 [rust-style-guide]: https://rustc-dev-guide.rust-lang.org/conventions.html
